@@ -41,6 +41,10 @@ class Controller extends BaseController
     {
         return view('Default');
     }
+    public function teacher()
+    {
+        return view('Teacher');
+    }
 }
 
 
