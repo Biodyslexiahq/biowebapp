@@ -37,6 +37,10 @@ class Controller extends BaseController
     {
         return view('Admin');
     }
+    public function default()
+    {
+        return view('Default');
+    }
 }
 
 

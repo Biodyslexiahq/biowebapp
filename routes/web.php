@@ -22,6 +22,7 @@ Route::get('Register',[Controller::class,'register']);
 Route::get('Booking',[Controller::class,'booking']);
 Route::get('Booking2',[Controller::class,'booking2']);
 Route::get('Admin',[Controller::class,'admin']);
+Route::get('Default',[Controller::class,'default']);
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
