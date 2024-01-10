@@ -33,7 +33,10 @@ class Controller extends BaseController
     {
         return view('Booking2');
     }
-
+    public function admin()
+    {
+        return view('Admin');
+    }
 }
 
 
