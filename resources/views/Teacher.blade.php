@@ -9,6 +9,7 @@
                 <!-- Header content -->
             </header>
             <div class="content">
+                <!--
                 <div class="left-panel">
                     <ul class="menu">
                         <li><asp:LinkButton ID="studentListLink" runat="server" CssClass="active" OnClick="studentListLink_Click">Student List</asp:LinkButton></li>
@@ -19,6 +20,7 @@
                         <li><asp:LinkButton ID="tCoheranLink" runat="server" CssClass="active" OnClick="tCoheranLink_Click">Coheran</asp:LinkButton></li>
                     </ul>
                 </div>
+                -->
                 <div class="main-content">
                     <asp:Panel ID="studentListPanel" runat="server">
                         <div class="form-container">
