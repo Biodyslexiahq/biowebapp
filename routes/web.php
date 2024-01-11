@@ -42,6 +42,10 @@ Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
+Route::view('teacher', 'teacher')
+    ->middleware(['auth', 'verified'])
+    ->name('teacher');
+
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');

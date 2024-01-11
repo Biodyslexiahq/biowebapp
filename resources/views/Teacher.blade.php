@@ -1,3 +1,4 @@
+<x-app-layout>
 <header>
     <link rel="stylesheet" href="{{ URL::asset('css/stylesDashboard.css')}}">
     </header>
@@ -755,3 +756,4 @@
             </div>
         </div>
     </form>
+</x-app-layout>
