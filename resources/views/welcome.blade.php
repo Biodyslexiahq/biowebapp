@@ -90,8 +90,8 @@
                 through Biofeedback Protocol and Script. The unique combination<br>
                 of Visual, Auditory and Kinesthetic (VAKT) Teaching Method<br>
                 and Biofeedback mind-body technique has proven to help students<br>
-                learn<mark>faster / improve impulse control<mark><br>/
-                emotional resilience / academic focus and confidence.<mark><br>
+                <b>learn faster / improve impulse control<br>/
+                emotional resilience / academic focus and confidence.</b><br>
               </h4>
               <br>
               <h4 class="centered-text">
