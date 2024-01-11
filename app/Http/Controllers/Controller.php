@@ -33,6 +33,23 @@ class Controller extends BaseController
     {
         return view('Booking2');
     }
+    public function appointment()
+    {
+        return view('Appointment');
+    }
+    public function dyslexiainfo()
+    {
+        return view('Dyslexiainfo');
+    }
+    public function problemindyslexia()
+    {
+        return view('ProbleminDyslexia');
+    }
+    public function childevaluation()
+    {
+        return view('Childevaluation');
+    }
+
 
 }
 

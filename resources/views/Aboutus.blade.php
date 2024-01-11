@@ -18,7 +18,9 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
-              <a class="navbar-brand" style="font-family: 'Comic Sans MS', cursive, sans-serif;" href="#">BioDyslexia</a>
+                <div>
+                <img src="{{ URL::asset('/images/mainlogo.jpg')}}" alt="mainlogo" style="width:290px;height:80px">
+                </div>
               <!--NAVBAR BUTTON-->
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

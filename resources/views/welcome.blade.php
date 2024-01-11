@@ -18,12 +18,14 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="vh-100 overflow-auto antialiased ">
+    <body class="vh-100 overflow-auto antialiased">
         <!--NAVBAR IMPLEMENTATION-->
           <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
-              <a class="navbar-brand" style="font-family: 'Comic Sans MS', cursive, sans-serif;" href="#">BioDyslexia</a>
+                <div>
+                <img src="{{ URL::asset('/images/mainlogo.jpg')}}" alt="mainlogo" style="width:290px;height:80px">
+                </div>
               <!--NAVBAR BUTTON-->
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -68,92 +70,154 @@
               <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Welcome to Biodyslexia</h1>
               <h2 class="centered-text fade-in-text gap-50px" style="font-family: Poppins;">Discover a limitless world of learning.</h2>
             </section>
-             <section class="left">
-              <div id="cloud"></div>
-            </section>
-            <section class="right">
-              <div id="cloud2"></div>
           </div>
           
-          <div class="container">
-            <section class="w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1 ">
-              <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Programs For All Ages</h1>
-              <h5 class="centered-text fade-in-text" style="font-family: Poppins;">Welcome to our school, where we offer the greatest special education to students with learning disabilities.</h3>
+          <div class=" container-full ">
+            <section class=" w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1 aboutus ">
+              <h1 class="centered-text fade-in-text" style="font-family: Chewy;">About us</h1>
+              <br>
+              <h4 class="centered-text">
+                For more than a year, it has been our joy to help students<br>
+                who struggle with learning disabilities to become confident<br>
+                learners who will leave us with the skills to continue to<br>
+                succeed in life far beyond our walls.
+              </h4>
+              <br>
+              <h4 class="centered-text">
+                BioDyslexia is a complete learning program for Dyslexia<br>
+                and other learning disabilities. Our research based program<br>
+                is a process of identifying and intervention of Dyslexia<br>
+                through Biofeedback Protocol and Script. The unique combination<br>
+                of Visual, Auditory and Kinesthetic (VAKT) Teaching Method<br>
+                and Biofeedback mind-body technique has proven to help students<br>
+                learn<mark>faster / improve impulse control<mark><br>/
+                emotional resilience / academic focus and confidence.<mark><br>
+              </h4>
+              <br>
+              <h4 class="centered-text">
+                BioDyslexia program is the first in the world and has received<br>
+                recognition from institutions of higher education and the HearthMath<br>
+                Institute USA. BioDyslexia has won two gold awards at the local and<br>
+                international innovation competition thus far!.
+              </h4>
               </section>
-              <section class="left1">
-                <div id="cloud3"></div>
-              </section>
-            </section>
           </div>
+            <br><br>
+            <!--Dyslexia faq-->
+            <div class="container">
+           <section>
+           <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Dyslexia FAQ</h1>
+           </section>
+           <br><br>
+           <section class="centered-text">
+            <a style="font-family: Poppins; "  href="/Dyslexiainfo">What is Dyslexia?</a>
+           </section>
+           <section class="centered-text">
+            <a style="font-family: Poppins;"  href="/ProbleminDyslexia">Problems in Dyslexia?</a>
+           </section>
+           <section class="centered-text">
+            <a style="font-family: Poppins;"  href="/Childevaluation">When should a child be evaluated?</a>
+           </section>
+           <section class="centered-text">
+            <a style="font-family: Poppins;"  href="">Other common Questions?</a>
+           </section>
+            </div>
 
-          <div class="containerimage">
-              <h1 class="centered-text fade-in-text sign" style="font-family: Chewy;">Awards &amp; Certificates</h1>
-            </section>
-            
-            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" centered-slides="true" grab-cursor="true">
-              <swiper-slide>
-                <img id="slide-1" src="images/cert1.jpeg" alt="certificate 1"/>
-              </swiper-slide>
-              <swiper-slide>
-                <img id="slide-2" src="images/cert2.jpeg" alt="certificate 2"/>
-              </swiper-slide>
-              <swiper-slide>
-                <img id="slide-3" src="images/cert3.jpeg" alt="certificate 3" />
-              </swiper-slide>
-              <swiper-slide>
-                <img id="slide-4" src="images/cert4.jpg" alt="certificate 4" />
-              </swiper-slide>
-              <swiper-slide>
-                <img id="slide-5" src="images/cert5.jpg" alt="certificate 5" /></swiper-slide>
-              <swiper-slide>
-                <img id="slide-6" src="images/cert6.jpg" alt="certificate 6" /></swiper-slide>
-              <swiper-slide>
-                <img id="slide-7" src="images/cert7.jpg" alt="certificate 7" />
-              </swiper-slide>
-            </swiper-container>
-          </div>
-
-          <div class="container">
+            <br><br>
+            <div class="container">
             <section>
-              <h1 class="centered-text feedback" style="font-family: Chewy;">Client Testimonials &amp; Feedback</h1>
+           <h1 class="centered-text fade-in-text" style="font-family: Chewy;">BioDyslexia FAQ</h1>
+           </section>
+           <br><br>
+           <section class="centered-text">
+            <a style="font-family: Poppins;"  href=""> What is the Objective of the Collaboration?</a>
+           </section>
+           <section class="centered-text">
+            <a style="font-family: Poppins;"  href="">Why do we use Biofeedback?</a>
+           </section>
+           <section class="centered-text">
+            <a style="font-family: Poppins;"  href="">What is Dyslexia and the VAKT Teaching Method?</a>
+           </section>
+           <section class="centered-text">
+            <a style="font-family: Poppins;"  href="">Why do we use the Multisensory Teaching/Learning Method?</a>
+           </section>
+           <section class="centered-text">
+            <a style="font-family: Poppins;"  href="">Advantages of Multisensory Learning?</a>
+           </section>
+           <section class="centered-text">
+            <a style="font-family: Poppins;"  href="">The process of BioDyslexia Protocol &amp; Script and Interventions?</a>
+           </section>
+           <section class="centered-text">
+            <a style="font-family: Poppins;"  href="">Why Choose Us?</a>
+           </section>
+            </div>
+            <br><br>
+
+            <div class="float-container bg-white">
+              <section class="float-child">
+              <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">Our "Train The Trainers" HRDF Claimable Training</h1>
+              <img class="hrdcorp"src="/images/hrdcorp.png" alt="hrdcorp image 1">
+              <img class="hrdcorp"src="/images/hrdcorp2.png" alt="hrdcorp image 2">
+              <br>
+              <h5>
+              Join our Teacher Training Program for Teachers, Educators and Parents in Supporting Learners with Dyslexia & Other Learning Disabilities. <br><br>𝐁𝐢𝐨𝐃𝐲𝐬𝐥𝐞𝐱𝐢𝐚© '𝐓𝐫𝐚𝐢𝐧 𝐓𝐡𝐞 𝐓𝐫𝐚𝐢𝐧𝐞𝐫𝐬' 𝐏𝐫𝐨𝐠𝐫𝐚𝐦 𝐢𝐬 𝐧𝐨𝐰 𝐨𝐟𝐟𝐢𝐜𝐢𝐚𝐥𝐥𝐲 𝐇𝐑𝐃𝐅 𝐓𝐫𝐚𝐢𝐧𝐢𝐧𝐠 𝐏𝐫𝐨𝐯𝐢𝐝𝐞𝐫. 𝐁𝐢𝐨𝐃𝐲𝐬𝐥𝐞𝐱𝐢𝐚© '𝐓𝐫𝐚𝐢𝐧 𝐓𝐡𝐞 𝐓𝐫𝐚𝐢𝐧𝐞𝐫𝐬' is a 𝐇𝐑𝐃𝐅 Claimable Training Provider (TP) registered with PSMB. This accreditation empowers all training by City Technologies to provide highest level of training. Our goal is to raise the standards and quality of professional learning and human development in the educational and social care sectors.
+              </h5>
+              </section>
+              <section class="float-child ">
+              <img class="bioworkshop" src="/images/Bioworkshop.jpg" alt="">
+              <br>
+              <div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhJUyiqftB8O-8_onLkBI-pUFtyoZ2em69qJf20v5LKJp1Ew/viewform"><button type="submit" class="btn btn-outline-primary d-grid gap-2 col-6 ml-auto mr-auto">Register Now!</button></a>
+              </div>
+              </section>
+            </div>
+
+            <div class="container-full location">
+              <section class=" d-flex flex-column justify-content-center allign-items-center fs-1">
+                <br>
+              <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Our Branches</h1>
+              <br>
+              <div class="tabs ml-auto mr-auto">
+              <input class="input" name="tabs" type="radio" id="tab-1" checked="checked"/>
+              <label class="label"  style="font-family: Oswald;" for="tab-1">Selangor</label>
+              <div class="panel">
+                <h1 style="font-family: Poppins;">SELANGOR</h1>
+                <p>No. 30-1, Jalan Simfoni 1, Balakong, Seri Kembangan, Selangor</p>
+                <br>
+                <p>60-2 Jalan Nautika B U20/B, Pusat Komersial TSB, 40160 Shah Alam</p>
+                
+              </div>
+              <input class="input" name="tabs" type="radio" id="tab-2"/>
+              <label class="label" style="font-family: Oswald;" for="tab-2">Negeri Sembilan</label>
+              <div class="panel">
+                <h1 style="font-family: Poppins;">NEGERI SEMBILAN</h1>
+                <p>No. 42, Jalan S2 Garden Avenue, 70300 Seremban</p>
+                
+              </div>
+              <input class="input" name="tabs" type="radio" id="tab-3"/>
+              <label class="label" style="font-family: Oswald;" for="tab-3">More Info</label>
+              <div class="panel">
+                <h1 style="font-family: Poppins;">Email us:</h1>
+                <p>citytechnologiesbiodyslexia@gmail.com</p>
+                <br>
+                <h1 style="font-family: Poppins;">Call us:</h1>
+                <p>Headquarters: 03-8961 1922</p>
+                <p>Mobile: 019320 0181 / 016 974 2101</p>
+              </div>
+            </div>
             </section>
-            
-            <swiper-container class="clientswiper" pagination="true" pagination-clickable="true" centered-slides="true" grab-cursor="true">
-              <swiper-slide>
-                <h1 style="font-family: Lobster;">En. Khairul Azman Bin Jamaludin</h1>
-                <div class="clientinfo">
-                  " Program ini mempunyai kaedah yang tersendiri dan guru-guru yang mahir dalam pengajaran dan sokongan kepada murid "
-                </div>
-              </swiper-slide>
-              <swiper-slide>
-                <h1 style="font-family: Lobster;">Puan Nordziah Binti Bakri</h1>
-                <div class="clientinfo">
-                  " Ujian diagnostik hasil kerjasama bersama UMP adalah salah satu inisiatif baik dalam mengenalpasti kecenderungan cara pengajaran yang membolehkan anak-anak dicenter ini belajar dengan lebih efektif "
-                </div>
-              </swiper-slide>
-              <swiper-slide>
-                <h1 style="font-family: Lobster;">Encik Mohammad Feroz Bin Mehat</h1>
-                <div class="clientinfo">
-                  " Nampak peningkatan dalam diri Aqif dari segi pelajaran dan pergaulan. Dia mula seronok ke sekolah dan belajar. Pembelajaran yang sesuai untuk anak2 dyslexia "
-                </div>
-              </swiper-slide>
-              <swiper-slide>
-                <h1 style="font-family: Lobster;">Puan Norhayati Yusof</h1>
-                <div class="clientinfo">
-                  " Ilmu yang sangat berguna, saya sarankan ibuayah yang mempunyai anak2 yang mempunyai kesukaran dan anak2 istimewa disleksia untuk datang ke sini...Terbaik! Terima Kasih Tuan Arif dan Puan Julie. Terima Kasih layanan terbaik "
-                </div>
-              </swiper-slide>
-            
-            </swiper-container>
-            
-           
-          
+             </div>
+
+             <div class="container-full bg-white ">
+              <h1 class="centered-text2">© 2020 City Technologies BIODYSLEXIA</h1>
+             </div>
+                      
 
           
 
     <!--Swiper JS Script-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    
+  
  
   </body>
 </html>

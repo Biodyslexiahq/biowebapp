@@ -23,7 +23,9 @@
      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
-              <a class="navbar-brand" style="font-family: 'Comic Sans MS', cursive, sans-serif;" href="#">BioDyslexia</a>
+                <div>
+                <img src="{{ URL::asset('/images/mainlogo.jpg')}}" alt="mainlogo" style="width:290px;height:80px">
+                </div>
               <!--NAVBAR BUTTON-->
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -63,7 +65,7 @@
           </nav>
 
           <!--Booking System Start here-->
-          <div class="container w-100 vh-100 d-flex justify-content-center align-items-center">
+          <div class="container d-flex justify-content-center align-items-center">
         <div class="row border rounded-5 p-3 bg-white shadow box-area ">
             <div class="col-md-6 rounded-5 d-flex justify-content-center align-items-center flex-column left-box2">
                 <div class="Register-image">
@@ -76,33 +78,103 @@
                         <p class="text-wrap text-center hovertext2" style="font-family: Poppins;">Fill the appointment form!</p>
                     </div>
                      <!--Booking System Start here-->
-          <form action="" method="post" class=" container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+
+                     
+          <form action="submit" method="POST" class=" container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+            @csrf
             <div class="mb-3 ">
                 <label for="Guardianformcontrol" class="form-label " style="font-family:Chewy;">Parents or Guardian Name :</label>
-                <input type="text" class="form-control" id="Guardianformcontrol" placeholder="Parent name here">
+                <input type="text" class="form-control" id="Guardianformcontrol" placeholder="Parent name here" name="Parentname">
                 <div class="mb-3 ">
                 <label for="Studentformcontrol" class="form-label " style="font-family:Chewy;">Student's Name :</label>
-                <input type="text" class="form-control" id="Studentformcontrol" placeholder="Student name here">
+                <input type="text" class="form-control" id="Studentformcontrol" placeholder="Student name here" name="Studentname">
                 </div>
                 <div class="mb-3 ">
                 <label for="Studentageformcontrol" class="form-label " style="font-family:Chewy;">Student's Age :</label>
-                <input type="number" class="form-control" id="Studentageformcontrol" placeholder="Student Age here">
+                <input type="number" class="form-control" id="Studentageformcontrol" placeholder="Student Age here" name="studentage">
                 </div>
                 <div class="mb-3 ">
                 <label for="Addressformcontrol" class="form-label " style="font-family:Chewy;">Address :</label>
-                <input type="text" class="form-control" id="Addressformcontrol" placeholder="Address here">
+                <input type="text" class="form-control" id="Addressformcontrol" placeholder="Address here" name="Address">
             </div>
             <div class="mb-3 ">
                 <label for="Contactnumformcontrol" class="form-label " style="font-family:Chewy;">Contact Number :</label>
-                <input type="number" class="form-control" id="Contactnumformcontrol" placeholder="Contact Number here">
+                <input type="number" class="form-control" id="Contactnumformcontrol" placeholder="Contact Number here" name="contactnum">
             </div>
             <div class="mb-3 ">
                 <label for="Emailformcontrol" class="form-label " style="font-family:Chewy;">Email :</label>
-                <input type="email" class="form-control" id="Emailformcontrol" placeholder="Email@here">
+                <input type="email" class="form-control" id="Emailformcontrol" placeholder="Email@here" name=Email>
             </div>
+            
+
+            <div class="mb-3 ">
+                    <h4 class="" style="font-family:Poppins">Please Choose your date :
+                
+                    <p>Monday - Friday : from 11am-3pm</p>
+                    <p>Saturday : 11 am only.</p>
+                    <br>
+                    <p>The assessment is expected to take approximately 
+                    1 hour and 30 minutes to 2 hours.</p>
+                    <br>
+                    <p>Please Note:</p>
+                    <br>
+                    <p>Please check availability of the date and time chosen to <a href="https://wa.link/93mkqu">0193769940</a> (<- click).</p>
+                    <br>
+                    <p>Parents are kindly requested not to enter the assessment room during the assessment to ensure a focused environment for the student without any distractions.</p>
+                    <br>
+                    </h4>
+                    <label for="Dateformcontrol" class="form-label" style="font-family:Chewy;">Date :</label>
+                    <input type="date" class="form-control" id="Dateageformcontrol" name="Date">
+                    </div>
+
+                    <div class="mb-3 ">
+                <label for="Timeformcontrol" class="form-label" style="font-family:Chewy;">Choose your time :</label>
+                <select name="timeform" id="Timeformcontrol">
+                  <option value="1">11 am</option>
+                  <option value="2">1.30 pm</option>
+                  <option value="3">3.30 pm</option>
+                </select>
+                </div>
+                
+                <div class="mb-3 ">
+                <h4 class="" style="font-family:Poppins">Assessment Fee: <br>
+                <p>All payment to : City Technologies</p>
+                <p>(Maybank) Account number: <mark>514075005242<mark></p>
+                <br>
+                <p>Assessment only : <mark>RM200<mark></p>
+                <br>
+                <p>With report : <mark>RM250 <mark></p>
+            </h4>
+            </div>
+
+            <div class="mb-3 ">
+                <label for="Assestmentformcontrol" class="form-label" style="font-family:Chewy;">Choose :</label>
+                <select name="assestmentform" id="Assestmentformcontrol">
+                <option value="1">Assessment Only.</option>
+                <option value="2">Assessment with Report.</option>
+                </select>
+            </div>   
+            <div class="mb-3 ">
+                <h4 class="" style="font-family:Poppins">Payment Option: <br>
+                <p>All payment to : City Technologies</p>
+                <p>(Maybank) Account number: <mark>514075005242<mark></p>
+                <br>
+                <p>Assessment only : <mark>RM200<mark></p>
+                <br>
+                <p>With report : <mark>RM250 <mark></p>
+            </h4>
+            </div>
+
+            <div class="mb-3 ">
+                <label for="Paymentformcontrol" class="form-label" style="font-family:Chewy;">Payment Option :</label>
+                <select name="paymentform" id="Paymentformcontrol">
+                  <option value="1">Cash.</option>
+                  <option value="2">Online Banking.</option>
+                </select>
+            </div>
+
             <div class="mb-3">
-            <a href="/Booking2"> 
-                <button type="button" class="btn btn-outline-primary d-grid gap-2 col-12">Continue</button></a>
+            <button type="submit" class="btn btn-outline-primary d-grid gap-2 col-12">Submit</button>
             </div>
           </form>
             </div>

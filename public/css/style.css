@@ -3,10 +3,13 @@
  @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i');
+ @import url('https://fonts.googleapis.com/css?family=Bree+Serif');
 
  
  body {
-    background-color: #023047;
+    background-image: url("../images/background8.jpg");
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
@@ -14,6 +17,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-attachment: fixed;
     
 } 
 .overlay-text {
@@ -39,8 +43,13 @@
     text-align: center;
     color: white;
     text-shadow: 1px 1px 4px #000;
-    
-    
+    font-size: 25px;
+}
+.centered-text2{
+   text-align: center;
+    color: black;
+    text-shadow: 1px 1px 4px #fff;
+    font-size: 25px;
 }
 .scroll {
    
@@ -50,6 +59,7 @@
     padding: 20px;
     
 }
+
 
 /*Footer Section*
 
@@ -605,3 +615,119 @@ max-width: 80%;
 .forgetlink{
   padding-left: 200px;
 }
+.child{
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+}
+.aboutusimg{
+  width: 40%;
+  display: block;
+  margin-left: 60%;
+  margin-right: auto;
+  border-radius: 5%;
+}
+.aboutus{
+  background-image: url("../images/aboutusimg1.jpg");
+  background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+mark { padding: 0 0.1em; }
+
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  
+} 
+.hrdcorp{
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bioworkshop{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.location{
+  background-image: url("../images/location2.jpg");
+  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  background: #e5e5e5;
+  box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
+}
+.input {
+  position: absolute;
+  opacity: 0;
+}
+.label {
+  width: 100%;
+  padding: 20px 30px;
+  background: #e5e5e5;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  color: #7f7f7f;
+  transition: background 0.1s, color 0.1s;
+}
+.label:hover {
+  background: #d8d8d8;
+}
+.label:active {
+  background: #ccc;
+}
+.input:focus + .label {
+  z-index: 1;
+}
+.input:checked + .label {
+  background: #fff;
+  color: #000;
+}
+@media (min-width: 600px) {
+  .label {
+    width: auto;
+  }
+}
+.panel {
+  display: none;
+  padding: 20px 30px 30px;
+  background: #fff;
+}
+@media (min-width: 600px) {
+  .panel {
+    order: 99;
+  }
+}
+.input:checked + .label + .panel {
+  display: block;
+}
+
+
+
+

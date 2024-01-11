@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Appointment;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,7 +21,15 @@ Route::get('Login',[Controller::class,'login']);
 Route::get('Programs',[Controller::class,'programs']);
 Route::get('Register',[Controller::class,'register']);
 Route::get('Booking',[Controller::class,'booking']);
-Route::get('Booking2',[Controller::class,'booking2']);
+Route::get('Appointment',[Controller::class,'appointment']);
+Route::get('Dyslexiainfo',[Controller::class,'dyslexiainfo']);
+Route::get('ProbleminDyslexia',[Controller::class,'problemindyslexia']);
+Route::get('Childevaluation',[Controller::class,'childevaluation']);
+
+
+Route::view('form','Booking');
+Route::post('submit','Appointment@submit');
+
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
