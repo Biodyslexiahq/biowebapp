@@ -49,7 +49,18 @@ class Controller extends BaseController
     {
         return view('Childevaluation');
     }
-
+        public function admin()
+    {
+        return view('Admin');
+    }
+    public function default()
+    {
+        return view('Default');
+    }
+    public function teacher()
+    {
+        return view('Teacher');
+    }
 
 }
 

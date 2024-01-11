@@ -21,6 +21,7 @@ Route::get('Login',[Controller::class,'login']);
 Route::get('Programs',[Controller::class,'programs']);
 Route::get('Register',[Controller::class,'register']);
 Route::get('Booking',[Controller::class,'booking']);
+
 Route::get('Appointment',[Controller::class,'appointment']);
 Route::get('Dyslexiainfo',[Controller::class,'dyslexiainfo']);
 Route::get('ProbleminDyslexia',[Controller::class,'problemindyslexia']);
@@ -29,6 +30,12 @@ Route::get('Childevaluation',[Controller::class,'childevaluation']);
 
 Route::view('form','Booking');
 Route::post('submit','Appointment@submit');
+
+
+Route::get('Booking2',[Controller::class,'booking2']);
+Route::get('Admin',[Controller::class,'admin']);
+Route::get('Default',[Controller::class,'default']);
+Route::get('Teacher',[Controller::class,'teacher']);
 
 
 Route::view('dashboard', 'dashboard')
