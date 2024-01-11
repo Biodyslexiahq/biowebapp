@@ -14,11 +14,11 @@
         <link rel="stylesheet" href="{{ URL::asset('css/style.css')}}"/>
         <!--SWIPER JS IMPLEMENTATION-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <title>What is Dyslexia</title>
+        <title>Child Evaluation</title>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="vh-100 overflow-auto antialiased">
+<body class="vh-100 overflow-auto antialiased childeva">
     <!--NAVBAR IMPLEMENTATION-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
@@ -67,9 +67,23 @@
         <br><br>
         <!--Dyslexia Info-->
 
-        <div class="w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1">
-        <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Wondering when a child should be evaluated?</h1>
+        <div class="container w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1">
         </div>
 
+        <div class="float-container bg-white  ">
+        <section class="float-child">
+        <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">When should a child be evaluated?</h1>
+        <br>
+        <p>Dyslexia can begin to reveal itself at a young age, some parents send their children for evaluations as early as four years old. However, it is best to wait until kids are a least six years old and have some formal instruction in reading to seek out formal evaluation. </p>
+        <br>
+        <p>But as soon as a gap between intelligence and reading skills is apparent — and evidence shows it can be seen in first grade — it’s a good idea to get help. Schools sometimes encourage parents to wait until the third grade to see if their child truly needs an intervention, but the earlier intervention is important not only to help kids catch up but to boost their fragile self-image, which is damaged by continuing struggle in school and comparisons with peers.</p>
+        </section>
+
+        <section class="float-child">
+        <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">Ready to evaluate ?</h1>
+        <br>
+        <a href="/Booking"><button class="button">Click Me</button></a>
+        </section>
         
+        </div>
 </html>

@@ -67,7 +67,7 @@
           <!--MAIN BODY IMPLEMENTATION-->
           <div class="container">
             <section class="w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1 ">
-              <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Welcome to Biodyslexia</h1>
+              <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Welcome to BioDyslexia</h1>
               <h2 class="centered-text fade-in-text gap-50px" style="font-family: Poppins;">Discover a limitless world of learning.</h2>
             </section>
           </div>
@@ -119,7 +119,7 @@
             <a style="font-family: Poppins;"  href="/Childevaluation">When should a child be evaluated?</a>
            </section>
            <section class="centered-text">
-            <a style="font-family: Poppins;"  href="">Other common Questions?</a>
+            <a style="font-family: Poppins;"  href="/Commonques">Other common Questions?</a>
            </section>
             </div>
 
@@ -130,7 +130,7 @@
            </section>
            <br><br>
            <section class="centered-text">
-            <a style="font-family: Poppins;"  href=""> What is the Objective of the Collaboration?</a>
+            <a style="font-family: Poppins;"  href="/Collab"> What is the Objective of the Collaboration?</a>
            </section>
            <section class="centered-text">
             <a style="font-family: Poppins;"  href="">Why do we use Biofeedback?</a>

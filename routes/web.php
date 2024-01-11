@@ -26,7 +26,8 @@ Route::get('Appointment',[Controller::class,'appointment']);
 Route::get('Dyslexiainfo',[Controller::class,'dyslexiainfo']);
 Route::get('ProbleminDyslexia',[Controller::class,'problemindyslexia']);
 Route::get('Childevaluation',[Controller::class,'childevaluation']);
-
+Route::get('Commonques',[Controller::class,'Commonques']);
+Route::get('Collab',[Controller::class,'collab']);
 
 Route::view('form','Booking');
 Route::post('submit','Appointment@submit');

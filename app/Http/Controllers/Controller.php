@@ -61,6 +61,14 @@ class Controller extends BaseController
     {
         return view('Teacher');
     }
+    public function commonques()
+    {
+        return view('Commonques');
+    }
+    public function collab()
+    {
+        return view("Collab");
+    }
 
 }
 

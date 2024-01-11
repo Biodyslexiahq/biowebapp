@@ -664,6 +664,16 @@ mark { padding: 0 0.1em; }
   margin-left: auto;
   margin-right: auto;
 }
+.childeva{
+  background-image: url("../images/childevaluation.jpg");
+  background-blend-mode: multiply;
+    object-position: 20% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+}
 .location{
   background-image: url("../images/location2.jpg");
   
@@ -727,6 +737,81 @@ mark { padding: 0 0.1em; }
 .input:checked + .label + .panel {
   display: block;
 }
+.button {
+  text-align: center;
+  font-family: Oswald;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 4px;
+  position: relative;
+  background-color: hsl(305, 77%, 76%);
+  border: none;
+  color: #fff;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #000;
+  border-radius: 4px;
+  margin-left: 35%;
+  
+  
+  
+}
+
+.button:hover {
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px #1abc9c;
+  color: #000;
+}
+
+.button:after {
+  content: "";
+  background: #1abc9c;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.button:focus { outline:0; }
+
+.commonques{
+  background-image: url("../images/commonquesimg.jpg");
+  background-blend-mode: multiply;
+    object-position: 20% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    overflow: scroll;
+}
+.collab{
+  background-image: url("../images/collabimg.jpg");
+  background-blend-mode: multiply;
+    object-position: 20% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    overflow: scroll;
+}
+
 
 
 
