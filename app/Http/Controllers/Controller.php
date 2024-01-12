@@ -89,6 +89,14 @@ class Controller extends BaseController
     {
         return view("Chooseus");
     }
+    public function contactus()
+    {
+        return view("Contactus");
+    }
+    public function introductionletters()
+    {
+        return view("Introductionletters");
+    }
 
 
 }

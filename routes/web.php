@@ -33,6 +33,8 @@ Route::get('Vakt',[Controller::class,'vakt']);
 Route::get('Multisensory',[Controller::class,'multisensory']);
 Route::get('Multisensory2',[Controller::class,'multisensory2']);
 Route::get('Chooseus',[Controller::class,'chooseus']);
+Route::get('Contactus',[Controller::class,'contactus']);
+Route::get('Introductionletters',[Controller::class,'introductionletters']);
 Route::view('form','Booking');
 Route::post('submit','Appointment@submit');
 

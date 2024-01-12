@@ -24,7 +24,7 @@
             <div class="container">
                 <!--NAVBAR LOGO-->
                 <div>
-                <img src="{{ URL::asset('/images/mainlogo.jpg')}}" alt="mainlogo" style="width:290px;height:80px">
+                  <a href="/"><img src="{{ URL::asset('/images/mainlogo.jpg')}}" alt="mainlogo" style="width:290px;height:80px"></a>
                 </div>
               <!--NAVBAR BUTTON-->
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -46,13 +46,18 @@
                     <li class="nav-item mx-2 ">
                       <a class="nav-link text-white" href="/Aboutus">About</a>
                     </li> 
-                      <li class="nav-item mx-2">
-                        <a class="nav-link text-white" href="/Booking">Booking</a>
-                      </li>
+                    <li class="nav-item dropdown text-white">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Booking</a>
+                        <div class="dropdown-menu">
+                            <a href="/Booking"class="dropdown-item">BioDyslexia Educational Assessment</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Other Bookings.</a>
+                        </div>
+                    </li>
                       <li class="nav-item dropdown text-white">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Programme</a>
                         <div class="dropdown-menu">
-                            <a href="#"class="dropdown-item">Introduction Letter</a>
+                            <a href="/Introductionletters"class="dropdown-item">Introduction Letter</a>
                             <a href="#" class="dropdown-item">BioDyslexia 4M Foundation Programme<br> (All Ages)</a>
                             <a href="#" class="dropdown-item">BioDyslexia MMI Techniques Programme<br> (For Elementary & Secondary Students)</a>
                             <div class="dropdown-divider"></div>
@@ -254,10 +259,101 @@
               <img src="/images/UMP.png" alt="Ump Logo" style="float:left; margin-right:10px;" class="ump">
               <img src="/images/eiu.png" alt="Ump Logo" style="float:left;" class="ump">
               </div>
-              
               </section>
              </div>
-                      
+             
+             <!--USER TESTIMONIALS STARTS HERE-->
+            <div class="container-full bg-white">
+            <div class="testimonials text-center">
+
+<div class="container">
+<h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">What Our Client Says</h1>
+  <div class="row">
+    <div class="col-md-6 col-lg-4">
+      <div class="card border-light bg-light text-center">
+        <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+        <div class="card-body blockquote">
+          <p class="card-text">Program ini mempunyai kaedah yang tersendiri dan guru-guru yang mahir dalam pengajaran dan sokongan kepada murid</p>
+          <br>
+          <footer class="blockquote-footer"><cite title="Source Title">En.Khairul Azman Bin Jamaludin</cite></footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card border-light bg-light text-center">
+        <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+        <div class="card-body blockquote">
+          <p class="card-text">Ujian diagnostik hasil kerjasama bersama UMP adalah salah satu inisiatif baik dalam mengenalpasti kecenderungan cara pengajaran yang membolehkan anak-anak dicenter ini belajar dengan lebih efektif</p>
+          <br>
+          <footer class="blockquote-footer"><cite title="Source Title">Puan Nordziah Binti Bakri</cite></footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card border-light bg-light text-center">
+        <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+        <div class="card-body blockquote">
+          <p class="card-text">Nampak peningkatan dalam diri Aqif dari segi pelajaran dan pergaulan. Dia mula seronok ke sekolah dan belajar. Pembelajaran yang sesuai untuk anak2 dyslexia</p>
+          <br>
+          <footer class="blockquote-footer"><cite title="Source Title">En. Mohd Feroz Bin Mehat</cite></footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card border-light bg-light text-center">
+        <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+        <div class="card-body blockquote">
+          <p class="card-text">Ilmu yang sangat berguna, saya sarankan ibuayah yang mempunyai anak2 yang mempunyai kesukaran dan anak2 istimewa disleksia untuk datang ke sini...Terbaik! Terima Kasih Tuan Arif dan Puan Julie. Terima Kasih layanan terbaik</p>
+          <br>
+          <footer class="blockquote-footer"><cite title="Source Title">Pn. Norhayati Yusof</cite></footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-4">
+      <div class="card border-light bg-light text-center">
+        <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+        <div class="card-body blockquote">
+          <p class="card-text">Alhamdulillah..
+
+Anakanda bonda di sini..dari zero dah jadi hero..
+
+Tqsm tenaga pengajar d sini..banyak membantu..
+
+Sebelum auliya di sini, dia sentiasa jd rendah diri sbb dia xboleh membaca..tp hari ini..dia bangga dgn dirinya..sering bagitahu pd bonda, abah, che su, tok ma dan mak tok.. "Auliya dah boleh baca"..
+
+Bonda proud of you auliya..</p>
+          <br>
+          <footer class="blockquote-footer"><cite title="Source Title">Pn. Nik Nurul Hamizah Nik Mohd Hussain</cite></footer>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+            </div>
+
+             <!--FAB IMPLEMENTATION-->
+             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+              <div class="floating-container">
+                <div class="floating-button">+</div>
+                <div class="element-container">
+
+                  <a href="https://api.whatsapp.com/send?phone=60193769940&text=Hey%2C%20I%20would%20like%20to%20check%20for%20time%20availability%20please." span class="float-element tooltip-left">
+                    <i class="material-icons">phone</i></a>
+                  <a href="/Contactus" span class="float-element">
+                    <i class="material-icons">email</i></a>
+        
+                    <span class="float-element">
+                    <i class="material-icons">chat</i>
+                  </span>
+                </div>
+              </div>       
 
           
 

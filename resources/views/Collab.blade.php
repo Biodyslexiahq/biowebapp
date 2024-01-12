@@ -18,11 +18,12 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="vh-100 overflow-auto antialiased collab">
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+ <!--NAVBAR IMPLEMENTATION-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
                 <div>
-                <img src="{{ URL::asset('/images/mainlogo.jpg')}}" alt="mainlogo" style="width:290px;height:80px">
+                  <a href="/"><img src="{{ URL::asset('/images/mainlogo.jpg')}}" alt="mainlogo" style="width:290px;height:80px"></a>
                 </div>
               <!--NAVBAR BUTTON-->
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -43,13 +44,26 @@
                     </li>
                     <li class="nav-item mx-2 ">
                       <a class="nav-link text-white" href="/Aboutus">About</a>
+                    </li> 
+                    <li class="nav-item dropdown text-white">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Booking</a>
+                        <div class="dropdown-menu">
+                            <a href="/Booking"class="dropdown-item">BioDyslexia Educational Assessment</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">Other Bookings.</a>
+                        </div>
                     </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-white" href="/Programs">Programs</a>
-                      </li> 
-                      <li class="nav-item mx-2">
-                        <a class="nav-link text-white" href="/Booking">Booking</a>
-                      </li>
+                      <li class="nav-item dropdown text-white">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Programme</a>
+                        <div class="dropdown-menu">
+                            <a href="/Introductionletters"class="dropdown-item">Introduction Letter</a>
+                            <a href="#" class="dropdown-item">BioDyslexia 4M Foundation Programme<br> (All Ages)</a>
+                            <a href="#" class="dropdown-item">BioDyslexia MMI Techniques Programme<br> (For Elementary & Secondary Students)</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">BioIqra' 1 (Islamic Programme)</a>
+                            <a href="#"class="dropdown-item">BioIqra' 2 (Islamic Programme)</a>
+                        </div>
+                    </li>
                   </ul>
                   <!--LOGIN / SIGNUP PAGE-->
                   <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 text-white">
@@ -89,6 +103,23 @@
         </section>
         
         </div>
+
+        <!--FAB IMPLEMENTATION-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+              <div class="floating-container">
+                <div class="floating-button">+</div>
+                <div class="element-container">
+
+                  <a href="https://api.whatsapp.com/send?phone=60193769940&text=Hey%2C%20I%20would%20like%20to%20check%20for%20time%20availability%20please." span class="float-element tooltip-left">
+                    <i class="material-icons">phone</i></a>
+                  <a href="/Contactus" span class="float-element">
+                    <i class="material-icons">email</i></a>
+        
+                    <span class="float-element">
+                    <i class="material-icons">chat</i>
+                  </span>
+                </div>
+              </div> 
 
 </body>
 </html>
