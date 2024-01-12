@@ -50,13 +50,14 @@
                         <a class="nav-link text-white" href="/Booking">Booking</a>
                       </li>
                       <li class="nav-item dropdown text-white">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Program</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Programme</a>
                         <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">BioDyslexia 4M Foundation Program (All Ages)</a>
-                            <a href="#" class="dropdown-item">BioDyslexia MMI Techniques Program (For Elementary & Secondary Students)</a>
+                            <a href="#"class="dropdown-item">Introduction Letter</a>
+                            <a href="#" class="dropdown-item">BioDyslexia 4M Foundation Programme<br> (All Ages)</a>
+                            <a href="#" class="dropdown-item">BioDyslexia MMI Techniques Programme<br> (For Elementary & Secondary Students)</a>
                             <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">BioIqra' 1 (Islamic Program)</a>
-                            <a href="#"class="dropdown-item">BioIqra' 2 (Islamic Program)</a>
+                            <a href="#" class="dropdown-item">BioIqra' 1 (Islamic Programme)</a>
+                            <a href="#"class="dropdown-item">BioIqra' 2 (Islamic Programme)</a>
                         </div>
                     </li>
                   </ul>
