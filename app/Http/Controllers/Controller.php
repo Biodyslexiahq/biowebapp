@@ -69,6 +69,27 @@ class Controller extends BaseController
     {
         return view("Collab");
     }
+    public function biofeedback()
+    {
+        return view("Biofeedback");
+    }
+    public function vakt()
+    {
+        return view("Vakt");
+    }
+    public function multisensory()
+    {
+        return view("Multisensory");
+    }
+    public function multisensory2()
+    {
+        return view("Multisensory2");
+    }
+    public function chooseus()
+    {
+        return view("Chooseus");
+    }
+
 
 }
 

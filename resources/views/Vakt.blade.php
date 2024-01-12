@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!--BOOTSTRAP IMPLEMENTATION-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
@@ -13,12 +14,13 @@
         <link rel="stylesheet" href="{{ URL::asset('css/style.css')}}"/>
         <!--SWIPER JS IMPLEMENTATION-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <title>Collaboration</title>
+        <title>What is BioDyslexia &amp; VAKT</title>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="vh-100 overflow-auto antialiased collab">
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+<body class="vh-100 overflow-auto antialiased vakt">
+    <!--NAVBAR IMPLEMENTATION-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
                 <div>
@@ -61,25 +63,23 @@
               </div>
             </div>
           </nav>
-         <br><br>   
 
-         <!--Main start here-->
-         <div class="container w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1">
+        <br><br>
+        <!--Dyslexia Info-->
+
+        <div class="container w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1">
         </div>
+        
 
         <div class="float-container bg-white  ">
         <section class="float-child">
-        <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">Objective of the Collaboration</h1>
+        <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">What is BioDyslexia?</h1>
         <br>
-        <p>1) To Identify the HRV spectrum among dyslexic children of various categories. </p>
+        <p>BioDyslexia© is a complete process of identification and intervention for children who have a persistent difficulty in learning to read as dyslexia. What separates BioDyslexia© with other dyslexia programs and dyslexia assessments testing's in the market today, is the unique combination of Visual, Auditory and Kinesthetic-Tactile (VAKT) Teaching Method and the Biofeedback Protocol & Script. </p>
         <br>
-        <p>2) To Identify the HEG spectrum among dyslexic children of various categories.</p>
+        <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">How VAKT were used?</h1>
         <br>
-        <p>3) To study the effect of biofeedback training on HRV and HEG scores in dyslexic children.</p>
-        <br>
-        <p>4) To study the effect of biofeedback training and the combination of sensory on reading performance among dyslexic children.</p>
-        <br>
-        <p>5) To develop biofeedback protocols and training script for improving the learning performance of dyslexic children</p>
+        <p>BioDyslexia© VAKT Teaching Method is an instructional approach intended primarily for use with persons who have difficulty with reading, spelling, and writing of the sort associated with dyslexia through Biofeedback Protocol & Script. The approach would incorporate the VAKT Multisensory Teaching Method and to identify the most coherent or dominant sensory in a particular student. This will then turn to become an intervention when teaching and learning materials revolve around the most coherent sensory method. Coherence plays a major role in this approach as learning in a state of coherence the student could practice and overcome struggles in learning easily. Students can also benefit from knowing which multisensory method is the most suitable for them by looking at levels of coherence. This could be put in use until even when they are adults one day.</p>
         </section>
 
         <section class="float-child">
@@ -89,6 +89,4 @@
         </section>
         
         </div>
-
-</body>
 </html>

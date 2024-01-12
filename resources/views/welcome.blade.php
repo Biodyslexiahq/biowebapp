@@ -66,24 +66,29 @@
 
           <!--MAIN BODY IMPLEMENTATION-->
           <div class="container">
-            <section class="w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1 ">
+            <section class="w-100 vh-100 d-flex flex-column justify-content-center align-items-center fs-1 ">
               <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Welcome to BioDyslexia</h1>
-              <h2 class="centered-text fade-in-text gap-50px" style="font-family: Poppins;">Discover a limitless world of learning.</h2>
+              <h2 class="centered-text fade-in-text gap-50px" style="font-family: Poppins;">We are Dyslexia Friendly Centre, We care about your Children.</h2>
+              <br>
+              <div class=" container">
+              
+              <a href="/Booking"><button class="button d-grid col-5 ml-auto mr-auto">Get a quotation ></button></a>
+              </div>
             </section>
           </div>
           
-          <div class=" container-full ">
-            <section class=" w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1 aboutus ">
-              <h1 class="centered-text fade-in-text" style="font-family: Chewy;">About us</h1>
-              <br>
-              <h4 class="centered-text">
+          <div class=" float-container bg-white ">
+            <section class=" float-child ">
+            <h1 class=" fade-in-text" style="font-family: Oswald;">About Us <i class="fa-regular fa-address-card"></i></h1>
+            <br>
+            <h5 style="font-family: Poppins;">
                 For more than a year, it has been our joy to help students<br>
                 who struggle with learning disabilities to become confident<br>
                 learners who will leave us with the skills to continue to<br>
                 succeed in life far beyond our walls.
-              </h4>
+            </h5>
               <br>
-              <h4 class="centered-text">
+              <h5 style="font-family: Poppins;">
                 BioDyslexia is a complete learning program for Dyslexia<br>
                 and other learning disabilities. Our research based program<br>
                 is a process of identifying and intervention of Dyslexia<br>
@@ -92,17 +97,41 @@
                 and Biofeedback mind-body technique has proven to help students<br>
                 <b>learn faster / improve impulse control<br>/
                 emotional resilience / academic focus and confidence.</b><br>
-              </h4>
+              </h5>
               <br>
-              <h4 class="centered-text">
+              <h5 style="font-family: Poppins;" >
                 BioDyslexia program is the first in the world and has received<br>
                 recognition from institutions of higher education and the HearthMath<br>
                 Institute USA. BioDyslexia has won two gold awards at the local and<br>
-                international innovation competition thus far!.
-              </h4>
-              </section>
+                international innovation competition thus far.
+              </h5>
+              <br>
+              <h1 class=" fade-in-text" style="font-family: Oswald;">Misson <i class="fa-solid fa-check"></i></h1>
+              <br>
+              <h5 style="font-family: Poppins;">
+              BioDyslexia ignites the academic and creative potential of students with dyslexia and other language-based learning differences. 
+              </h5>
+              <br>
+              <h1 class=" fade-in-text" style="font-family: Oswald;">Vision <i class="fa-solid fa-check"></i></h1>
+              <br>
+              <h5 style="font-family: Poppins;">
+              The world class educational program at BioDyslexia is a catalyst for students to discover the joy of learning within a rich, comprehensive school experience.
+              </h5>
+              <br>
+              <h1 class=" fade-in-text" style="font-family: Oswald;">Core Values <i class="fa-solid fa-check"></i></h1>
+              <br>
+              <h5 style="font-family: Poppins;">
+              Respect | Responsibility | Purpose | Perseverance
+              </h5>
+              <br>
+             </section>
+
+             <section class="float-child">
+              <img src="/images/aboutusimg4.jpg" alt="">
+             </section>
           </div>
             <br><br>
+
             <!--Dyslexia faq-->
             <div class="container">
            <section>
@@ -133,22 +162,22 @@
             <a style="font-family: Poppins;"  href="/Collab"> What is the Objective of the Collaboration?</a>
            </section>
            <section class="centered-text">
-            <a style="font-family: Poppins;"  href="">Why do we use Biofeedback?</a>
+            <a style="font-family: Poppins;"  href="/Biofeedback">Why do we use Biofeedback?</a>
            </section>
            <section class="centered-text">
-            <a style="font-family: Poppins;"  href="">What is Dyslexia and the VAKT Teaching Method?</a>
+            <a style="font-family: Poppins;"  href="/Vakt">What is Dyslexia and the VAKT Teaching Method?</a>
            </section>
            <section class="centered-text">
-            <a style="font-family: Poppins;"  href="">Why do we use the Multisensory Teaching/Learning Method?</a>
+            <a style="font-family: Poppins;"  href="/Multisensory">Why do we use the Multisensory Teaching/Learning Method?</a>
            </section>
            <section class="centered-text">
-            <a style="font-family: Poppins;"  href="">Advantages of Multisensory Learning?</a>
+            <a style="font-family: Poppins;"  href="/Multisensory2">Advantages of Multisensory Learning?</a>
            </section>
            <section class="centered-text">
             <a style="font-family: Poppins;"  href="">The process of BioDyslexia Protocol &amp; Script and Interventions?</a>
            </section>
            <section class="centered-text">
-            <a style="font-family: Poppins;"  href="">Why Choose Us?</a>
+            <a style="font-family: Poppins;"  href="/Chooseus">Why Choose Us?</a>
            </section>
             </div>
             <br><br>
@@ -172,7 +201,7 @@
               </section>
             </div>
 
-            <div class="container-full location">
+            <div class="container-full ">
               <section class=" d-flex flex-column justify-content-center allign-items-center fs-1">
                 <br>
               <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Our Branches</h1>
@@ -207,9 +236,18 @@
             </div>
             </section>
              </div>
-
-             <div class="container-full bg-white ">
-              <h1 class="centered-text2">© 2020 City Technologies BIODYSLEXIA</h1>
+              <br><br>
+             <div class="w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1 bg-white ">
+              <section class="container-full ">
+              <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">Our Official Collaborator</h1>
+              <br>
+              <div class="d-flex  justify-content-center align-items-center">
+              <img src="/images/heartmath2.png" alt="heartmath logo" style="float:left; margin-right:10px;">
+              <img src="/images/UMP.png" alt="Ump Logo" style="float:left; margin-right:10px;" class="ump">
+              <img src="/images/eiu.png" alt="Ump Logo" style="float:left;" class="ump">
+              </div>
+              
+              </section>
              </div>
                       
 

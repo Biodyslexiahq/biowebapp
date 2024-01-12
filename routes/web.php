@@ -28,7 +28,11 @@ Route::get('ProbleminDyslexia',[Controller::class,'problemindyslexia']);
 Route::get('Childevaluation',[Controller::class,'childevaluation']);
 Route::get('Commonques',[Controller::class,'Commonques']);
 Route::get('Collab',[Controller::class,'collab']);
-
+Route::get('Biofeedback',[Controller::class,'biofeedback']);
+Route::get('Vakt',[Controller::class,'vakt']);
+Route::get('Multisensory',[Controller::class,'multisensory']);
+Route::get('Multisensory2',[Controller::class,'multisensory2']);
+Route::get('Chooseus',[Controller::class,'chooseus']);
 Route::view('form','Booking');
 Route::post('submit','Appointment@submit');
 

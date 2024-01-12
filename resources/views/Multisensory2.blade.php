@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!--BOOTSTRAP IMPLEMENTATION-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
@@ -13,12 +14,13 @@
         <link rel="stylesheet" href="{{ URL::asset('css/style.css')}}"/>
         <!--SWIPER JS IMPLEMENTATION-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <title>Collaboration</title>
+        <title>Multisensory Advantages</title>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="vh-100 overflow-auto antialiased collab">
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+<body class="vh-100 overflow-auto antialiased">
+    <!--NAVBAR IMPLEMENTATION-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
                 <div>
@@ -61,34 +63,38 @@
               </div>
             </div>
           </nav>
-         <br><br>   
 
-         <!--Main start here-->
-         <div class="container w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1">
+        <br><br>
+        <!--Dyslexia Info-->
+
+        <div class="container w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1">
         </div>
+        
 
         <div class="float-container bg-white  ">
         <section class="float-child">
-        <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">Objective of the Collaboration</h1>
+        <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">Advantages of Multisensory?</h1>
         <br>
-        <p>1) To Identify the HRV spectrum among dyslexic children of various categories. </p>
+        <p><i class="fa-solid fa-check"></i> Improves memory by providing redundancy, reinforcement and using the whole brain. Multisensory exposure can result in better recognition.</p>
         <br>
-        <p>2) To Identify the HEG spectrum among dyslexic children of various categories.</p>
+        <p><i class="fa-solid fa-check"></i> Works for all kinds of learning styles: visual, auditory and kinaesthetic</p>
         <br>
-        <p>3) To study the effect of biofeedback training on HRV and HEG scores in dyslexic children.</p>
+        <p><i class="fa-solid fa-check"></i> Reduces cognitive load and promotes dual coding – more information is processed if split into and presented by several channels.</p>
         <br>
-        <p>4) To study the effect of biofeedback training and the combination of sensory on reading performance among dyslexic children.</p>
+        <p><i class="fa-solid fa-check"></i> New multisensory associations in the brain can develop rapidly. Even alters responses in sensory areas of the brain.</p>
         <br>
-        <p>5) To develop biofeedback protocols and training script for improving the learning performance of dyslexic children</p>
+        <p><i class="fa-solid fa-check"></i> Neural plasticity – The brain’s ability to reorganize itself and form new connections throughout life – is highly enhanced, especially if the multisensory learning starts early in the child’s life.</p>
+        <br>
+        <p><i class="fa-solid fa-check"></i> Increases concentration and focus</p>
+        <br>
+        <p><i class="fa-solid fa-check"></i> Increases opportunity for choice and self determination and improves communication and sharing.</p>
+        <br>
         </section>
 
         <section class="float-child">
-        <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">Ready to evaluate ?</h1>
-        <br>
-        <a href="/Booking"><button class="button">Click Me</button></a>
+        <img src="/images/teaching.jpg" alt="heartmath logo" class="ml-auto mr-auto w-50"><br>
+      
         </section>
         
         </div>
-
-</body>
 </html>

@@ -629,13 +629,11 @@ max-width: 80%;
   margin-right: auto;
   border-radius: 5%;
 }
-.aboutus{
-  background-image: url("../images/aboutusimg1.jpg");
+.aboutus1{
+  background-image: url("../images/aboutusimg3.jpg");
   background-blend-mode: multiply;
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-attachment: fixed;
@@ -650,9 +648,13 @@ mark { padding: 0 0.1em; }
 .float-child {
   width: 50%;
   float: left;
-  padding: 20px;
+  padding: 10px;
   
 } 
+.ump{
+  width: 15%;
+  padding-left: 20px;
+}
 .hrdcorp{
   width: 20%;
   display: block;
@@ -666,6 +668,36 @@ mark { padding: 0 0.1em; }
 }
 .childeva{
   background-image: url("../images/childevaluation.jpg");
+  background-blend-mode: multiply;
+    object-position: 20% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+.chooseus{
+  background-image: url("../images/chooseus.jpg");
+  background-blend-mode: multiply;
+    object-position: 20% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+.multisensory{
+  background-image: url("../images/teaching.jpg");
+  background-blend-mode: multiply;
+    object-position: 20% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+.vakt{
+  background-image: url("../images/aboutusimg1.jpg");
   background-blend-mode: multiply;
     object-position: 20% 100%;
     background-size: cover;
@@ -810,6 +842,18 @@ mark { padding: 0 0.1em; }
     flex-direction: column;
     background-attachment: fixed;
     overflow: scroll;
+}
+.biofeedback{
+  background-image: url("../images/commonquesimg.jpg");
+  background-blend-mode: multiply;
+    object-position: 20% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    overflow: scroll;
+    
 }
 
 
