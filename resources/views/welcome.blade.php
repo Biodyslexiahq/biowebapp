@@ -45,13 +45,20 @@
                     </li>
                     <li class="nav-item mx-2 ">
                       <a class="nav-link text-white" href="/Aboutus">About</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link text-white" href="/Programs">Programs</a>
-                      </li> 
+                    </li> 
                       <li class="nav-item mx-2">
                         <a class="nav-link text-white" href="/Booking">Booking</a>
                       </li>
+                      <li class="nav-item dropdown text-white">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Program</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">BioDyslexia 4M Foundation Program (All Ages)</a>
+                            <a href="#" class="dropdown-item">BioDyslexia MMI Techniques Program (For Elementary & Secondary Students)</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">BioIqra' 1 (Islamic Program)</a>
+                            <a href="#"class="dropdown-item">BioIqra' 2 (Islamic Program)</a>
+                        </div>
+                    </li>
                   </ul>
                   <!--LOGIN / SIGNUP PAGE-->
                   <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 text-white">
