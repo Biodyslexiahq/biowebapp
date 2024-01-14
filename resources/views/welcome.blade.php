@@ -58,11 +58,17 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Programme</a>
                         <div class="dropdown-menu">
                             <a href="/Introductionletters"class="dropdown-item">Introduction Letter</a>
-                            <a href="#" class="dropdown-item">BioDyslexia 4M Foundation Programme<br> (All Ages)</a>
+                            <a href="/Foundationprog" class="dropdown-item">BioDyslexia 4M Foundation Programme<br> (All Ages)</a>
                             <a href="#" class="dropdown-item">BioDyslexia MMI Techniques Programme<br> (For Elementary & Secondary Students)</a>
                             <div class="dropdown-divider"></div>
                             <a href="#" class="dropdown-item">BioIqra' 1 (Islamic Programme)</a>
                             <a href="#"class="dropdown-item">BioIqra' 2 (Islamic Programme)</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown text-white">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EIU</a>
+                        <div class="dropdown-menu">
+                            <a href="#"class="dropdown-item">Courses for Teachers &amp; Parents</a>
                         </div>
                     </li>
                   </ul>
@@ -350,15 +356,49 @@ Bonda proud of you auliya..</p>
                     <i class="material-icons">email</i></a>
         
                     <span class="float-element">
-                    <i class="material-icons">chat</i>
+                    <i class="material-icons">lock</i>
                   </span>
                 </div>
-              </div>       
+              </div>     
+              
+              <!--POP UP WINDOW-->
+              <div class='popup-onload'>
+              <div class='cnt223'>
 
+              <div class="popup-content">
+                    <h1>This is a pop-up</h1>
+              <br/>
+              <br/>
+              <a href='' class='close'>Close</a>
+              </div>
+              </div>
+              </div>
           
+              
 
     <!--Swiper JS Script-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src='https://code.jquery.com/jquery-1.8.2.js'></script>
+
+    <script>
+      $(function(){
+      var overlay = $('<div id="overlay"></div>');
+      overlay.show();
+      overlay.appendTo(document.body);
+      $('.popup-onload').show();
+      $('.close').click(function(){
+      $('.popup-onload').hide();
+      overlay.appendTo(document.body).remove();
+      return false;
+      });
+
+      $('.x').click(function(){
+      $('.popup').hide();
+      overlay.appendTo(document.body).remove();
+      return false;
+      });
+      });
+    </script>
   
  
   </body>

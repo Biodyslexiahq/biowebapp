@@ -29,10 +29,6 @@ class Controller extends BaseController
     {
         return view('Booking');
     }
-    public function booking2()
-    {
-        return view('Booking2');
-    }
     public function appointment()
     {
         return view('Appointment');
@@ -96,6 +92,10 @@ class Controller extends BaseController
     public function introductionletters()
     {
         return view("Introductionletters");
+    }
+    public function foundationprog()
+    {
+        return view("Foundationprog");
     }
 
 

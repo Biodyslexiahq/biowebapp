@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="{{ URL::asset('css/style.css')}}"/>
         <!--SWIPER JS IMPLEMENTATION-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <title>What is Dyslexia</title>
+        <title>4M Foundation Prog</title>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -65,12 +65,6 @@
                             <a href="#"class="dropdown-item">BioIqra' 2 (Islamic Programme)</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown text-white">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EIU</a>
-                        <div class="dropdown-menu">
-                            <a href="#"class="dropdown-item">Courses for Teachers &amp; Parents</a>
-                        </div>
-                    </li>
                   </ul>
                   <!--LOGIN / SIGNUP PAGE-->
                   <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 text-white">
@@ -83,30 +77,8 @@
             </div>
           </nav>
 
-
-
-        <!--Dyslexia Info-->
-
-        <div class="container">
-            <section class="w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1 ">
-            <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Problem in Dyslexia?</h1>
-            </section>
-        </div>
-        <div class="container">
-            <section class="w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1">
-            <small class="centered-text">
-            This developmental disorder involves difficulties learning and using academic skills. One of the  vital signs parents should look out for is the trouble decoding words. A child should be bright in for further assessment when they are unable to match letters and sounds to read. Phonemic awareness is one of the main skills dyslexic kids lack. It is defined as the ability to hear and manipulate the sounds of letters to form a word (Shaywitz,2003).
-            </small>
-            <br>
-            <small class="centered-text">
-                
-            In some kids, dyslexia is not picked up until later on, when they have trouble with more complex skills. These may include grammar, reading comprehension, reading fluency, sentence structure, and more in-depth writing. Kids with dyslexia might avoid reading, both out loud and to themselves. They may even get anxious or frustrated when reading. This can happen even after they have mastered the basics of reading.(Medina, 2018). Generally, dyslexia can be said to be a processing problem. This means that a dyslexic brain processes information differently from a non-dyslexic brain. The ability to read and write can be significantly affected by this processing difference. However, this processing difference can effect far more than just reading and writing (Lapkin,2014).
-            </small>
-            </section>
-        </div>
-
-        <!--FAB IMPLEMENTATION-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+           <!--FAB IMPLEMENTATION-->
+           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
               <div class="floating-container">
                 <div class="floating-button">+</div>
                 <div class="element-container">
@@ -120,6 +92,8 @@
                     <i class="material-icons">chat</i>
                   </span>
                 </div>
-              </div> 
+              </div>
+              
+              
 </body>
 </html>

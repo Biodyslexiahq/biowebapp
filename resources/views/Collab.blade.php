@@ -18,8 +18,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="vh-100 overflow-auto antialiased collab">
- <!--NAVBAR IMPLEMENTATION-->
- <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+<!--NAVBAR IMPLEMENTATION-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
                 <div>
@@ -57,11 +57,17 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Programme</a>
                         <div class="dropdown-menu">
                             <a href="/Introductionletters"class="dropdown-item">Introduction Letter</a>
-                            <a href="#" class="dropdown-item">BioDyslexia 4M Foundation Programme<br> (All Ages)</a>
+                            <a href="/Foundationprog" class="dropdown-item">BioDyslexia 4M Foundation Programme<br> (All Ages)</a>
                             <a href="#" class="dropdown-item">BioDyslexia MMI Techniques Programme<br> (For Elementary & Secondary Students)</a>
                             <div class="dropdown-divider"></div>
                             <a href="#" class="dropdown-item">BioIqra' 1 (Islamic Programme)</a>
                             <a href="#"class="dropdown-item">BioIqra' 2 (Islamic Programme)</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown text-white">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EIU</a>
+                        <div class="dropdown-menu">
+                            <a href="#"class="dropdown-item">Courses for Teachers &amp; Parents</a>
                         </div>
                     </li>
                   </ul>
@@ -75,6 +81,7 @@
               </div>
             </div>
           </nav>
+
          <br><br>   
 
          <!--Main start here-->

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Appointmentcontroller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Appointment;
@@ -35,8 +36,9 @@ Route::get('Multisensory2',[Controller::class,'multisensory2']);
 Route::get('Chooseus',[Controller::class,'chooseus']);
 Route::get('Contactus',[Controller::class,'contactus']);
 Route::get('Introductionletters',[Controller::class,'introductionletters']);
-Route::view('form','Booking');
-Route::post('submit','Appointment@submit');
+Route::get('Foundationprog',[Controller::class,'Foundationprog']);
+
+Route::post('/addappdata',[Appointmentcontroller::class, 'addappdata'])->name('addappdata');
 
 
 Route::get('Booking2',[Controller::class,'booking2']);

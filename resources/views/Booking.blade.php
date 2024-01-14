@@ -19,8 +19,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-     <!--NAVBAR IMPLEMENTATION-->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+   <!--NAVBAR IMPLEMENTATION-->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
                 <div>
@@ -58,11 +58,17 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Programme</a>
                         <div class="dropdown-menu">
                             <a href="/Introductionletters"class="dropdown-item">Introduction Letter</a>
-                            <a href="#" class="dropdown-item">BioDyslexia 4M Foundation Programme<br> (All Ages)</a>
+                            <a href="/Foundationprog" class="dropdown-item">BioDyslexia 4M Foundation Programme<br> (All Ages)</a>
                             <a href="#" class="dropdown-item">BioDyslexia MMI Techniques Programme<br> (For Elementary & Secondary Students)</a>
                             <div class="dropdown-divider"></div>
                             <a href="#" class="dropdown-item">BioIqra' 1 (Islamic Programme)</a>
                             <a href="#"class="dropdown-item">BioIqra' 2 (Islamic Programme)</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown text-white">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EIU</a>
+                        <div class="dropdown-menu">
+                            <a href="#"class="dropdown-item">Courses for Teachers &amp; Parents</a>
                         </div>
                     </li>
                   </ul>
@@ -93,30 +99,48 @@
                      <!--Booking System Start here-->
 
                      
-          <form action="submit" method="POST" class=" container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+          <form action="{{url('addappdata')}}" method="POST" class=" container d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
             @csrf
             <div class="mb-3 ">
                 <label for="Guardianformcontrol" class="form-label " style="font-family:Chewy;">Parents or Guardian Name :</label>
-                <input type="text" class="form-control" id="Guardianformcontrol" placeholder="Parent name here" name="Parentname">
+                <input type="text" class="form-control" id="parentsname" placeholder="Parent name here" name="Parentname">
+                @error('Parentname')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
                 <div class="mb-3 ">
                 <label for="Studentformcontrol" class="form-label " style="font-family:Chewy;">Student's Name :</label>
-                <input type="text" class="form-control" id="Studentformcontrol" placeholder="Student name here" name="Studentname">
+                <input type="text" class="form-control" id="studentsname" placeholder="Student name here" name="Studentname">
+                @error('Studentname')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
                 </div>
                 <div class="mb-3 ">
                 <label for="Studentageformcontrol" class="form-label " style="font-family:Chewy;">Student's Age :</label>
-                <input type="number" class="form-control" id="Studentageformcontrol" placeholder="Student Age here" name="studentage">
+                <input type="number" class="form-control" id="studentssage" placeholder="Student Age here" name="studentage">
+                @error('studentage')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
                 </div>
                 <div class="mb-3 ">
                 <label for="Addressformcontrol" class="form-label " style="font-family:Chewy;">Address :</label>
-                <input type="text" class="form-control" id="Addressformcontrol" placeholder="Address here" name="Address">
+                <input type="text" class="form-control" id="address" placeholder="Address here" name="Address">
+                @error('Address')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
             </div>
             <div class="mb-3 ">
                 <label for="Contactnumformcontrol" class="form-label " style="font-family:Chewy;">Contact Number :</label>
-                <input type="number" class="form-control" id="Contactnumformcontrol" placeholder="Contact Number here" name="contactnum">
+                <input type="number" class="form-control" id="controlnum" placeholder="Contact Number here" name="contactnum">
+                @error('contactnum')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
             </div>
             <div class="mb-3 ">
                 <label for="Emailformcontrol" class="form-label " style="font-family:Chewy;">Email :</label>
-                <input type="email" class="form-control" id="Emailformcontrol" placeholder="Email@here" name=Email>
+                <input type="email" class="form-control" id="email" placeholder="Email@here" name=Email>
+                @error('Email')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
             </div>
             
 
@@ -131,22 +155,30 @@
                     <br>
                     <p>Please Note:</p>
                     <br>
-                    <p>Please check availability of the date and time chosen to <a href="https://wa.link/93mkqu">0193769940</a> (<- click).</p>
+                    <p>Please check availability of the date and time before choosing.</p>
                     <br>
                     <p>Parents are kindly requested not to enter the assessment room during the assessment to ensure a focused environment for the student without any distractions.</p>
                     <br>
                     </h4>
                     <label for="Dateformcontrol" class="form-label" style="font-family:Chewy;">Date :</label>
-                    <input type="date" class="form-control" id="Dateageformcontrol" name="Date">
+                    <input type="date" class="form-control" id="date" name="Date">
+                    @error('Date')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
                     </div>
 
                     <div class="mb-3 ">
                 <label for="Timeformcontrol" class="form-label" style="font-family:Chewy;">Choose your time :</label>
-                <select name="timeform" id="Timeformcontrol">
+                <select name="timeform" id="time">
+                <option disabled selected value> -- select an option -- </option>
                   <option value="1">11 am</option>
                   <option value="2">1.30 pm</option>
                   <option value="3">3.30 pm</option>
                 </select>
+                <br>
+                @error('timeform')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
                 </div>
                 
                 <div class="mb-3 ">
@@ -162,10 +194,15 @@
 
             <div class="mb-3 ">
                 <label for="Assestmentformcontrol" class="form-label" style="font-family:Chewy;">Choose :</label>
-                <select name="assestmentform" id="Assestmentformcontrol">
-                <option value="1">Assessment Only.</option>
-                <option value="2">Assessment with Report.</option>
+                <select name="assestmentform" id="assessmentopt">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Assessment Only">Assessment Only.</option>
+                <option value="Assessment with Report">Assessment with Report.</option>
                 </select>
+                <br>
+                @error('assestmentform')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
             </div>   
             <div class="mb-3 ">
                 <h4 class="" style="font-family:Poppins">Payment Option: <br>
@@ -180,10 +217,15 @@
 
             <div class="mb-3 ">
                 <label for="Paymentformcontrol" class="form-label" style="font-family:Chewy;">Payment Option :</label>
-                <select name="paymentform" id="Paymentformcontrol">
-                  <option value="1">Cash.</option>
-                  <option value="2">Online Banking.</option>
+                <select name="paymentform" id="paymentopt">
+                <option disabled selected value> -- select an option -- </option>
+                  <option value="Cash">Cash.</option>
+                  <option value="Online Banking">Online Banking.</option>
                 </select>
+                <br>
+                @error('paymentform')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
             </div>
 
             <div class="mb-3">
