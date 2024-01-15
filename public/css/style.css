@@ -391,28 +391,21 @@
   letter-spacing: 2px;
 }
 /*DR SRI JULIANA BIO*/
-.biography img{
-  margin-top: 10%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-  padding-bottom: 5%;
-}
 .biography{
   background-color: #fff;
   border-radius: 10%;
   margin-top: 10%;
-  
+  width: 20%;
+  height: 20%;
+  margin-left: 500px;
+  margin-right: auto;
 }
-.biography h2{
-  text-align: center;
-  font-size: 50px;
-  padding-top: 10%;
+.juliana{
+  width: 20%;
+  height: 20%;
+  object-fit: fill;
 }
-.biography p{
-  text-align: center;
-}
+
 /*DR SRI JULIANA BIO*/
 /*-------------------*/
 /*ARIF BIO*/
@@ -715,6 +708,15 @@ mark { padding: 0 0.1em; }
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+.staffbio{
+  background-image: url("../images/aboutusimg5.jpg");
+  background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     background-attachment: fixed;
@@ -1303,6 +1305,8 @@ mark { padding: 0 0.1em; }
     .cnt223 .x:hover{
     cursor: pointer;
     }
+
+    
   
 
 

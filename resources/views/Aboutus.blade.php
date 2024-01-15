@@ -9,11 +9,12 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <!--External CSS Implementation-->
          <!--SWIPER JS IMPLEMENTATION-->
+         <script src="https://kit.fontawesome.com/a176545576.js" crossorigin="anonymous"></script>
          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="{{ URL::asset('css/style.css')}}">
-        <title>About</title>
+        <title>Dr Sri Juliana Safri</title>
     </head>
-    <body class="vh-100 overflow hidden">
+    <body class="vh-100 overflow-auto antialiased staffbio">
        <!--NAVBAR IMPLEMENTATION-->
        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
@@ -39,7 +40,7 @@
                       <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item mx-2 ">
-                      <a class="nav-link text-white" href="/Aboutus">About</a>
+                      <a class="nav-link text-white" href="/Aboutusselection">About</a>
                     </li> 
                     <li class="nav-item dropdown text-white">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Booking</a>
@@ -78,67 +79,58 @@
             </div>
           </nav>
 
+          
+          <div class="container w-100 vh-100 ">
+        </div>
 
-          <div class="container">
+            
+
+             <!--MAIN BIO START HERE-->
+          <div class="float-container bg-white w-100 vh-100 overflow-auto ">
+            <section class="float-child">
+            <h1 class=" fade-in-text centered-text2" style="font-family: Oswald;">Dr. Sri Juliana Safri biography</h1>
+            <br><br>
+            <p>Dr. Sri Juliana Safri is an innovative educator driven by a dedicated commitment to enriching lives through education. Armed with a Diploma in Special Educational Needs and Disabilities (UK) and an Advanced Diploma in Child Psychology (UK), she possesses extensive expertise in the field. Her academic journey further advanced with an Executive Master's in HRM, reaching its pinnacle with the attainment of a Professional Doctorate in Special Education.
+
+              Fueled by a profound passion for positive change, Dr. Safri established BioDyslexia, a groundbreaking initiative empowering dyslexic learners. Through unwavering dedication, BioDyslexia stands at the forefront, spearheading transformative educational approaches and leaving an enduring mark.</p>
+              <br><br>
+            <h1 class=" fade-in-text centered-text2" style="font-family: Oswald;">Education Background</h1>
+            <br><br>
+            <ul>
+                <li>PD SpED (France)</li>
+                <li> EMHRM (UR, LRN, UK(2023)</li>
+                <li>AdvDip(ChildPsych,UK)</li>
+                <li> DipSEND(UK)</li>
+                <li>Cert.Sup. CLD(UOL, UCL Institute of Education, UK)</li>
+                <li>Cert.SLT(UK)</li>
+                <li>Cert.TESOL/TEFL (UK)</li>
+                <li>CP.NLP(UK)</li>
+                <li>CP.CBT(UK)</li>
+                <li>Trauma-Sensitive CP (HeartMath, USA)</li>
+                <li>Certified Professional Life Coach (USA)</li>
+              </ul>
+            </section>
+            <!--IMAGE HERE-->
+            <section class="float-child">
+            <img src="/images/bioteam2.jpg" alt="Dr Sri Juliana Safri Img" class="biography">
+            <br><br>
+            </section>
+            
+
+          </div>
+
+          
            
-            <!--TEAM SECTION-->
-            <section class="container">
-              <h1 class="text-white centered-text learnmore" style="font-family: Chewy;">Swipe to learn more !</h1>
-            </section>
 
-            <section>
-              <div class="swiper swiper ">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="images/bioteam-Juliana.JPG" alt="">
-                    <div class="info">
-                      <h3>Dr. Sri Juliana Safri</h3>
-                      <h4>Founder &amp; Managing Director</h4>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/bioteam3.JPG" alt="">
-                    <div class="info">
-                      <h3>Ariful Akmal Mohd Kasim</h3>
-                      <h4>Co-founder &amp; Director</h4>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/bioteam1.jpg" alt="">
-                    <div class="info">
-                      <h3>Idris</h3>
-                      <h4>Chief Information Officer &amp; Manager</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </section>
 
-            <section class="container biography">
-              <h2 style="font-family: Lobster;" >Dr Sri Juliana Safri</h2>
-              <p style="font-family: Poppins;">PD SpED (France), EMHRM UniRazak, LRN, UK(2023),  AdvDip(ChildPsych,UK), DipSEND(UK), Cert.Sup. CLD(UOL, UCL Institute of Education, UK), Cert.SLT(UK), Cert.TESOL/TEFL (UK), CP.NLP(UK), CP.CBT(UK), Trauma-Sensitive CP (HeartMath, USA), Certified Professional Life Coach (USA).</p>
-              <img src="images/bioteam2.JPG" alt="Dr_Juliana_img">
-              <p style="font-family: Poppins;">Dr. Sri Juliana Safri is an accomplished educator dedicated to improving lives through learning. With a rich academic journey spanning the UK, USA, and Malaysia, she holds qualifications ranging from a Professional Doctorate in Special Education to various certifications in child psychology, special educational needs, coaching, and more.
+           
 
-                Driven by a passion for positive change, Dr. Safri founded BioDyslexia, an initiative aimed at empowering dyslexic learners. Her commitment to transforming education is evident in the initiative's impactful work. This biography highlights her diverse expertise and global perspective, showcasing a visionary leader in the field of education.
-                </p>
-            </section>
 
-            <section class="container biography2">
-              <h2 style="font-family: Lobster;">Ariful Akmal Mohd Kasim</h2>
-              <img src="images/bioteam3.JPG" alt="Ariful_Akmal_img">
-              <div class="heartmath">
-                <img src="images/Heartmath CP.png" alt="Heartmath">
-              </div>
-              <p style="font-family: Poppins;">Is an accomplished Independent Business  Owner known for delivering strong revenue and profit gains in highly competitive markets. The Director with company oversight, committed to cost-effective management of resources and quality performance. In Credit and collection business over 12 years, Multi-task oriented, Expert, Highly Motivated with solid experience managing all levels of multiple projects including F&B and Education. </p>
-            </section>
+           
+           
 
-            <section class="container biography3">
-              <h2 style="font-family: Lobster;">Idris</h2>
-              <img src="images/bioteam1.jpg" alt="Idris_img">
-              <p style="font-family: Poppins;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima unde corporis, esse iste quidem obcaecati? Accusamus dicta possimus dolore iste in! Veniam velit voluptatum omnis provident laboriosam ipsam a facere.</p>
-            </section>
+           
+        
 
       
             <!--SWIPER JS TEAM IMPLEMENTATION-->
@@ -153,6 +145,7 @@
               loop: true,
             },
           });
+
         </script>
 
         <!--FAB IMPLEMENTATION-->

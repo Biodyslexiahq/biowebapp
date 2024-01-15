@@ -38,11 +38,17 @@ Route::get('Multisensory2',[Controller::class,'multisensory2']);
 Route::get('Chooseus',[Controller::class,'chooseus']);
 Route::get('Contactus',[Controller::class,'contactus']);
 Route::get('Introductionletters',[Controller::class,'introductionletters']);
-Route::get('Foundationprog',[Controller::class,'Foundationprog']);
+Route::get('Foundationprog',[Controller::class,'foundationprog']);
+Route::get('Aboutusselection',[Controller::class,'aboutusselection']);
+Route::get('Arifulbio',[Controller::class,'arifulbio']);
+Route::get('Idrisbio',[Controller::class,'idrisbio']);
+Route::get('Nohbio',[Controller::class,'nohbio']);
 
+
+//FORM//
 Route::post('/addappdata',[Appointmentcontroller::class, 'addappdata'])->name('addappdata');
 Route::post('/addcontactusdata',[Contactuscontroller::class, 'addcontactusdata'])->name('addcontactusdata');
-
+//FORM//
 
 Route::get('Booking2',[Controller::class,'booking2']);
 Route::get('Admin',[Controller::class,'admin']);
@@ -61,6 +67,10 @@ Route::view('teacher', 'teacher')
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
+
+    Route::view('welcome', 'welcome')
+    ->middleware(['auth', 'verified'])
+    ->name('welcome');
 
 
     

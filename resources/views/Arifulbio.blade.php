@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -14,11 +14,11 @@
         <link rel="stylesheet" href="{{ URL::asset('css/style.css')}}"/>
         <!--SWIPER JS IMPLEMENTATION-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <title>4M Foundation Prog</title>
+        <title>Ariful Bio</title>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="vh-100 overflow-auto antialiased">
+<body class="vh-100 overflow-auto antialiased staffbio">
     <!--NAVBAR IMPLEMENTATION-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
@@ -65,6 +65,12 @@
                             <a href="#"class="dropdown-item">BioIqra' 2 (Islamic Programme)</a>
                         </div>
                     </li>
+                    <li class="nav-item dropdown text-white">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EIU</a>
+                        <div class="dropdown-menu">
+                            <a href="#"class="dropdown-item">Courses for Teachers &amp; Parents</a>
+                        </div>
+                    </li>
                   </ul>
                   <!--LOGIN / SIGNUP PAGE-->
                   <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 text-white">
@@ -77,8 +83,62 @@
             </div>
           </nav>
 
-           <!--FAB IMPLEMENTATION-->
-           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <div class="container w-100 vh-100 ">
+        </div>
+
+            
+
+             <!--MAIN BIO START HERE-->
+          <div class="float-container bg-white w-100 vh-100 overflow-auto ">
+            <section class="float-child">
+            <h1 class=" fade-in-text centered-text2" style="font-family: Oswald;">Ariful Akmal Mohd Kasim</h1>
+            <br><br>
+            <p>Is an accomplished Independent Business  Owner known for delivering strong revenue and profit gains in highly competitive markets. The Director with company oversight, committed to cost-effective management of resources and quality performance. In Credit and collection business over 12 years, Multi-task oriented, Expert, Highly Motivated with solid experience managing all levels of multiple projects including F&B and Education. </p>
+              <br><br>
+            <h1 class=" fade-in-text centered-text2" style="font-family: Oswald;">Education Background</h1>
+            <br><br>
+            <img src="/images/Heartmath CP.png" alt="heartmath logo" style="margin-left: auto; margin-right: auto;">
+            </section>
+            <!--IMAGE HERE-->
+            <section class="float-child">
+            <img src="/images/bioteam3.JPG" alt="Arif Img" class="biography">
+            <br><br>
+            </section>
+            
+
+          </div>
+
+          
+           
+
+
+           
+
+
+           
+           
+
+           
+        
+
+      
+            <!--SWIPER JS TEAM IMPLEMENTATION-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+          const swiper = new Swiper('.swiper', {
+            effect: 'cards',
+            cardsEffect: {
+              grabcursor: true,
+              autoplay: true,
+              speed: 1000,
+              loop: true,
+            },
+          });
+
+        </script>
+
+        <!--FAB IMPLEMENTATION-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
               <div class="floating-container">
                 <div class="floating-button">+</div>
                 <div class="element-container">
@@ -92,8 +152,8 @@
                     <i class="material-icons">chat</i>
                   </span>
                 </div>
-              </div>
-              
-              
+              </div> 
+
+      
 </body>
 </html>

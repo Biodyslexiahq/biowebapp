@@ -42,7 +42,7 @@
                       <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item mx-2 ">
-                      <a class="nav-link text-white" href="/Aboutus">About</a>
+                      <a class="nav-link text-white" href="/Aboutusselection">About</a>
                     </li> 
                     <li class="nav-item dropdown text-white">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Booking</a>

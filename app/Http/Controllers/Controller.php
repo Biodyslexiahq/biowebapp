@@ -97,6 +97,23 @@ class Controller extends BaseController
     {
         return view("Foundationprog");
     }
+    public function aboutusselection()
+    {
+        return view("Aboutusselection");
+    }
+    public function arifulbio()
+    {
+        return view("Arifulbio");
+    }
+    public function idrisbio()
+    {
+        return view("Idrisbio");
+    }
+    public function nohbio()
+    {
+        return view("Nohbio");
+    }
+
 
 
 }

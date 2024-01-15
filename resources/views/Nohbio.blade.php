@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -14,13 +14,13 @@
         <link rel="stylesheet" href="{{ URL::asset('css/style.css')}}"/>
         <!--SWIPER JS IMPLEMENTATION-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <title>4M Foundation Prog</title>
+        <title>Noh Bio</title>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="vh-100 overflow-auto antialiased">
-    <!--NAVBAR IMPLEMENTATION-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+<body class="vh-100 overflow-auto antialiased staffbio">
+     <!--NAVBAR IMPLEMENTATION-->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
                 <div>
@@ -65,6 +65,12 @@
                             <a href="#"class="dropdown-item">BioIqra' 2 (Islamic Programme)</a>
                         </div>
                     </li>
+                    <li class="nav-item dropdown text-white">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EIU</a>
+                        <div class="dropdown-menu">
+                            <a href="#"class="dropdown-item">Courses for Teachers &amp; Parents</a>
+                        </div>
+                    </li>
                   </ul>
                   <!--LOGIN / SIGNUP PAGE-->
                   <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 text-white">
@@ -77,8 +83,33 @@
             </div>
           </nav>
 
-           <!--FAB IMPLEMENTATION-->
-           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <div class="container w-100 vh-100 ">
+        </div>
+
+            
+
+             <!--MAIN BIO START HERE-->
+          <div class="float-container bg-white w-100 vh-100 overflow-auto ">
+            <section class="float-child">
+            <h1 class=" fade-in-text centered-text2" style="font-family: Oswald;">Noh A.Akmal biography</h1>
+            <br><br>
+            <p>Teacher Noh brings a wealth of knowledge and experience to the field of Early Childhood Education, specializing in BioDyslexia instruction. Holding a certification as a BioDyslexia teacher, he has dedicated over three years to guiding students through the challenges of dyslexia and various learning disabilities.
+
+                His expertise shines particularly in handling BioDyslexia Early Beginner, Beginner, and Pre-Intermediate levels. Beyond dyslexia, he is well-versed in supporting children with mild ADHD and mild autism, showcasing his commitment to inclusive and diverse educational environments.
+
+                With a passion for creating tailored learning experiences, Teacher Noh has honed his skills to provide effective and compassionate instruction. His dedication to helping children overcome educational hurdles reflects a commitment to fostering a positive and nurturing learning environment for every student he encounters.</p>
+            </section>
+            <!--IMAGE HERE-->
+            <section class="float-child">
+            <img src="/images/bioteam4.jpg" alt="Noh Img" class="biography">
+            <br><br>
+            </section>
+            
+
+          </div>
+
+        <!--FAB IMPLEMENTATION-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
               <div class="floating-container">
                 <div class="floating-button">+</div>
                 <div class="element-container">
@@ -92,8 +123,8 @@
                     <i class="material-icons">chat</i>
                   </span>
                 </div>
-              </div>
-              
-              
+              </div> 
+
+      
 </body>
 </html>

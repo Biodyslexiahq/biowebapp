@@ -44,7 +44,7 @@
                       <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item mx-2 ">
-                      <a class="nav-link text-white" href="/Aboutus">About</a>
+                      <a class="nav-link text-white" href="/Aboutusselection">About</a>
                     </li> 
                     <li class="nav-item dropdown text-white">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Booking</a>
@@ -125,7 +125,11 @@
                 international innovation competition thus far.
               </h5>
               <br>
-              <h1 class=" fade-in-text" style="font-family: Oswald;">Misson <i class="fa-solid fa-check"></i></h1>
+             
+             </section>
+
+             <section class="float-child">
+             <h1 class=" fade-in-text" style="font-family: Oswald;">Misson <i class="fa-solid fa-check"></i></h1>
               <br>
               <h5 style="font-family: Poppins;">
               BioDyslexia ignites the academic and creative potential of students with dyslexia and other language-based learning differences. 
@@ -143,10 +147,6 @@
               Respect | Responsibility | Purpose | Perseverance
               </h5>
               <br>
-             </section>
-
-             <section class="float-child">
-              <img src="/images/aboutusimg4.jpg" alt="">
              </section>
           </div>
             <br><br>

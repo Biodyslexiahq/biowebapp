@@ -24,7 +24,7 @@ new class extends Component
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}" wire:navigate>
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
+                        <!--IMAGE LOGO HERE-->
                     </a>
                 </div>
 
@@ -65,6 +65,10 @@ new class extends Component
                                 {{ __('Log Out') }}
                             </x-dropdown-link>
                         </button>
+                        <!--Home-->
+                        <x-dropdown-link :href="route('welcome')" wire:navigate>
+                            {{ __('Home') }}
+                        </x-dropdown-link>
                     </x-slot>
                 </x-dropdown>
             </div>
