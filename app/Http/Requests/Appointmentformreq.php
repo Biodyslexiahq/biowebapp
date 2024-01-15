@@ -13,7 +13,7 @@ class Appointmentformreq extends FormRequest
      */
     public function authorize(): bool
     {
-        return auth()->check('appointment');
+        return true;
     }
 
     /**

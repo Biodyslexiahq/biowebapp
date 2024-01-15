@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Appointmentcontroller;
+use App\Http\Controllers\Contactuscontroller;
+use App\Models\ContactusDataModel;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Appointment;
@@ -39,6 +41,7 @@ Route::get('Introductionletters',[Controller::class,'introductionletters']);
 Route::get('Foundationprog',[Controller::class,'Foundationprog']);
 
 Route::post('/addappdata',[Appointmentcontroller::class, 'addappdata'])->name('addappdata');
+Route::post('/addcontactusdata',[Contactuscontroller::class, 'addcontactusdata'])->name('addcontactusdata');
 
 
 Route::get('Booking2',[Controller::class,'booking2']);

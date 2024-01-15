@@ -90,15 +90,28 @@
           <section id="contact">
             <div class="sectionheader">	<h1>CONTACT US</h1></div>
             <article>
-            <p>Hey, feel free to contact us !</p>
+            <p>Hey, want to share your thoughts? share down below !</p>
                 
                     <label for="checkcontact" class="contactbutton"><div class="mail"></div></label><input id="checkcontact" type="checkbox">
             
-                    <form action="" method="post" class="contactform">
+                    <form action="{{url('/addcontactusdata')}}" method="POST" class="contactform">
+                      @csrf
                         <p class="input_wrapper"><input type="text" name="contact_nom" value=""  id ="contact_nom"><label for="contact_nom">NAME</label></p>
+                        @error('contact_nom')
+                        <span class="text-danger">{{ $message }}</span>
+                        @enderror
                         <p class="input_wrapper"><input type="text" name="contact_email" value=""  id ="contact_email"><label for="contact_email">EMAIL</label></p>
+                        @error('contact_email')
+                        <span class="text-danger">{{ $message }}</span>
+                        @enderror
                         <p class="input_wrapper"><input type="text" name="contact_sujet" value=""  id ="contact_sujet"><label for="contact_sujet">SUBJECT</label></p>
+                        @error('contact_sujet')
+                        <span class="text-danger">{{ $message }}</span>
+                        @enderror
                         <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>
+                        @error('contact_message')
+                        <span class="text-danger">{{ $message }}</span>
+                        @enderror
                         <p class="submit_wrapper"><input type="submit" value="ENVOYER"></p>			
                     </form>
             </article>
