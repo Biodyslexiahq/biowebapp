@@ -178,6 +178,9 @@
            </section>
            <br><br>
            <section class="centered-text">
+            <a style="font-family: Poppins;"  href="/Childrensuccess"> Can BioDyslexia guarantee children success?</a>
+           </section>
+           <section class="centered-text">
             <a style="font-family: Poppins;"  href="/Collab"> What is the Objective of the Collaboration?</a>
            </section>
            <section class="centered-text">
@@ -272,78 +275,111 @@
             <div class="container-full bg-white">
             <div class="testimonials text-center">
 
-<div class="container">
-<h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">What Our Client Says</h1>
-  <div class="row">
-    <div class="col-md-6 col-lg-4">
-      <div class="card border-light bg-light text-center">
-        <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
-        <div class="card-body blockquote">
-          <p class="card-text">Program ini mempunyai kaedah yang tersendiri dan guru-guru yang mahir dalam pengajaran dan sokongan kepada murid</p>
-          <br>
-          <footer class="blockquote-footer"><cite title="Source Title">En.Khairul Azman Bin Jamaludin</cite></footer>
-        </div>
-      </div>
-    </div>
+            <div class="container">
+            <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">What Our Client Says</h1>
+              <div class="row">
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-light bg-light text-center">
+                    <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                    <div class="card-body blockquote">
+                      <p class="card-text">Program ini mempunyai kaedah yang tersendiri dan guru-guru yang mahir dalam pengajaran dan sokongan kepada murid</p>
+                      <br>
+                      <footer class="blockquote-footer"><cite title="Source Title">En.Khairul Azman Bin Jamaludin</cite></footer>
+                    </div>
+                  </div>
+                </div>
 
-    <div class="col-md-6 col-lg-4">
-      <div class="card border-light bg-light text-center">
-        <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
-        <div class="card-body blockquote">
-          <p class="card-text">Ujian diagnostik hasil kerjasama bersama UMP adalah salah satu inisiatif baik dalam mengenalpasti kecenderungan cara pengajaran yang membolehkan anak-anak dicenter ini belajar dengan lebih efektif</p>
-          <br>
-          <footer class="blockquote-footer"><cite title="Source Title">Puan Nordziah Binti Bakri</cite></footer>
-        </div>
-      </div>
-    </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-light bg-light text-center">
+                    <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                    <div class="card-body blockquote">
+                      <p class="card-text">Ujian diagnostik hasil kerjasama bersama UMP adalah salah satu inisiatif baik dalam mengenalpasti kecenderungan cara pengajaran yang membolehkan anak-anak dicenter ini belajar dengan lebih efektif</p>
+                      <br>
+                      <footer class="blockquote-footer"><cite title="Source Title">Puan Nordziah Binti Bakri</cite></footer>
+                    </div>
+                  </div>
+                </div>
 
-    <div class="col-md-6 col-lg-4">
-      <div class="card border-light bg-light text-center">
-        <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
-        <div class="card-body blockquote">
-          <p class="card-text">Nampak peningkatan dalam diri Aqif dari segi pelajaran dan pergaulan. Dia mula seronok ke sekolah dan belajar. Pembelajaran yang sesuai untuk anak2 dyslexia</p>
-          <br>
-          <footer class="blockquote-footer"><cite title="Source Title">En. Mohd Feroz Bin Mehat</cite></footer>
-        </div>
-      </div>
-    </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-light bg-light text-center">
+                    <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                    <div class="card-body blockquote">
+                      <p class="card-text">Nampak peningkatan dalam diri Aqif dari segi pelajaran dan pergaulan. Dia mula seronok ke sekolah dan belajar. Pembelajaran yang sesuai untuk anak2 dyslexia</p>
+                      <br>
+                      <footer class="blockquote-footer"><cite title="Source Title">En. Mohd Feroz Bin Mehat</cite></footer>
+                    </div>
+                  </div>
+                </div>
 
-    <div class="col-md-6 col-lg-4">
-      <div class="card border-light bg-light text-center">
-        <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
-        <div class="card-body blockquote">
-          <p class="card-text">Ilmu yang sangat berguna, saya sarankan ibuayah yang mempunyai anak2 yang mempunyai kesukaran dan anak2 istimewa disleksia untuk datang ke sini...Terbaik! Terima Kasih Tuan Arif dan Puan Julie. Terima Kasih layanan terbaik</p>
-          <br>
-          <footer class="blockquote-footer"><cite title="Source Title">Pn. Norhayati Yusof</cite></footer>
-        </div>
-      </div>
-    </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-light bg-light text-center">
+                    <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                    <div class="card-body blockquote">
+                      <p class="card-text">Ilmu yang sangat berguna, saya sarankan ibuayah yang mempunyai anak2 yang mempunyai kesukaran dan anak2 istimewa disleksia untuk datang ke sini...Terbaik! Terima Kasih Tuan Arif dan Puan Julie. Terima Kasih layanan terbaik</p>
+                      <br>
+                      <footer class="blockquote-footer"><cite title="Source Title">Pn. Norhayati Yusof</cite></footer>
+                    </div>
+                  </div>
+                </div>
 
-    <div class="col-md-6 col-lg-4">
-      <div class="card border-light bg-light text-center">
-        <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
-        <div class="card-body blockquote">
-          <p class="card-text">Alhamdulillah..
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-light bg-light text-center">
+                    <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                    <div class="card-body blockquote">
+                      <p class="card-text">Alhamdulillah..
 
-Anakanda bonda di sini..dari zero dah jadi hero..
+            Anakanda bonda di sini..dari zero dah jadi hero..
 
-Tqsm tenaga pengajar d sini..banyak membantu..
+            Tqsm tenaga pengajar d sini..banyak membantu..
 
-Sebelum auliya di sini, dia sentiasa jd rendah diri sbb dia xboleh membaca..tp hari ini..dia bangga dgn dirinya..sering bagitahu pd bonda, abah, che su, tok ma dan mak tok.. "Auliya dah boleh baca"..
+            Sebelum auliya di sini, dia sentiasa jd rendah diri sbb dia xboleh membaca..tp hari ini..dia bangga dgn dirinya..sering bagitahu pd bonda, abah, che su, tok ma dan mak tok.. "Auliya dah boleh baca"..
 
-Bonda proud of you auliya..</p>
-          <br>
-          <footer class="blockquote-footer"><cite title="Source Title">Pn. Nik Nurul Hamizah Nik Mohd Hussain</cite></footer>
-        </div>
-      </div>
-    </div>
+            Bonda proud of you auliya..</p>
+                      <br>
+                      <footer class="blockquote-footer"><cite title="Source Title">Pn. Nik Nurul Hamizah Nik Mohd Hussain</cite></footer>
+                    </div>
+                  </div>
+                </div>
 
-  </div>
-</div>
-
-</div>
+              </div>
             </div>
 
+            </div>
+            <br><br>
+            <footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/p/BioDyslexia-Educational-Intervention-Therapy-Center-100077100994731/">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://x.com/BioDyslexia?s=20">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/company/city-technologies/">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/biodyslexiatuitioncenter/?hl=en">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="/">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="/Aboutusselection">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="/Contactus">Contact</a></li>
+
+    </ul>
+    <p>&copy;2024 BioDyslexia.com | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                        </div>
+            <!--USER TESTIMONIALS ENDS HERE-->
+              
              <!--FAB IMPLEMENTATION-->
              <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
               <div class="floating-container">

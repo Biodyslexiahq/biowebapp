@@ -113,6 +113,10 @@ class Controller extends BaseController
     {
         return view("Nohbio");
     }
+    public function childrensuccess()
+    {
+        return view("Childrensuccess");
+    }
 
 
 

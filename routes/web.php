@@ -43,6 +43,7 @@ Route::get('Aboutusselection',[Controller::class,'aboutusselection']);
 Route::get('Arifulbio',[Controller::class,'arifulbio']);
 Route::get('Idrisbio',[Controller::class,'idrisbio']);
 Route::get('Nohbio',[Controller::class,'nohbio']);
+Route::get('Childrensuccess',[Controller::class,'childrensuccess']);
 
 
 //FORM//
