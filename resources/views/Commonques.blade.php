@@ -18,8 +18,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="vh-100 overflow-auto antialiased commonques">
- <!--NAVBAR IMPLEMENTATION-->
- <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+<!--NAVBAR IMPLEMENTATION-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
                 <div>
@@ -68,6 +68,16 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EIU</a>
                         <div class="dropdown-menu">
                             <a href="#"class="dropdown-item">Courses for Teachers &amp; Parents</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown text-white">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Buy a Book</a>
+                        <div class="dropdown-menu">
+                            <a href="https://www.amazon.com/Comes-BioDyslexia-Commander-Dyslexia-Defenders/dp/9358830433"class="dropdown-item">Amazon</a>
+                            <a href="https://www.kobo.com/hk/en/ebook/here-comes-biodyslexia-the-commander-of-the-dyslexia-defenders"class="dropdown-item">Rakuten Kobo</a>
+                            <a href="https://www.booktopia.com.au/here-comes-biodyslexia-the-commander-of-the-dyslexia-defenders--sri-juliana-safri/ebook/9789358830422.html"class="dropdown-item">Booktopia</a>
+                            <a href="https://www.indigo.ca/en-ca/here-comes-biodyslexia-the-commander-of-the-dyslexia-defenders/9789358830439.html"class="dropdown-item">Indigo</a>
+                            <a href="https://www.betterworldbooks.com/product/detail/here-comes-biodyslexia-the-commander-of-the-dyslexia-defenders-9789358830439"class="dropdown-item">BetterWorldBooks</a>
                         </div>
                     </li>
                   </ul>

@@ -83,6 +83,12 @@
             </div>
           </nav>
 
+          <div class="container-full">
+          <br><br>
+          <h1 class="centered-text fade-in-text" style="font-family: Chewy;">BioDyslexia Official Letter</h1>
+          <br><br>
+          <img src="/images/introletter.png" alt="Heartmath official letter" class="ml-auto mr-auto w-50 border-radius-10">
+          </div>
 
           <div class="container-full">
           <br><br>
