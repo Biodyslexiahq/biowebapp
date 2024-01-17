@@ -271,12 +271,13 @@
               </section>
              </div>
              
-             <!--USER TESTIMONIALS STARTS HERE-->
+             <!--USER TESTIMONIALS STARTS HERE BM-->
             <div class="container-full bg-white">
             <div class="testimonials text-center">
 
             <div class="container">
             <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">What Our Client Says</h1>
+            <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">BM</h1>
               <div class="row">
                 <div class="col-md-6 col-lg-4">
                   <div class="card border-light bg-light text-center">
@@ -345,7 +346,150 @@
             </div>
 
             </div>
+            <br>
+            <!--USER TESTIMONIALS ENDS HERE BM-->
+            <!--USER TESTIMONIALS STARTS HERE BI-->
             <br><br>
+            
+            <div class="container-full bg-white"></div>
+            <div class="testimonials text-center">
+            <div class="container">
+            <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">What Our Client Says</h1>
+            <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">ENG</h1>
+              <div class="row">
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-light bg-light text-center">
+                    <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                    <div class="card-body blockquote">
+                      <p class="card-text">“This program has its own method and teachers who are skilled in teaching and supporting students”</p>
+                      <br>
+                      <footer class="blockquote-footer"><cite title="Source Title">En.Khairul Azman Bin Jamaludin</cite></footer>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-light bg-light text-center">
+                    <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                    <div class="card-body blockquote">
+                      <p class="card-text">“The collaborative effort with UMP has led to the development of a diagnostic test, which stands out as a positive initiative. This test helps identify effective teaching methods for the children at this center, allowing them to learn more efficiently.” </p>
+                      <br>
+                      <footer class="blockquote-footer"><cite title="Source Title">Madam Nordziah Bt. Bakri</cite></footer>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-light bg-light text-center">
+                    <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                    <div class="card-body blockquote">
+                      <p class="card-text">“It appears that Aqif's progress is notable both academically and socially. He now takes pleasure in attending school and engaging in learning activities. This tailored approach to education is especially beneficial for dyslexic children like him..”</p>
+                      <br>
+                      <footer class="blockquote-footer"><cite title="Source Title">En. Mohd Feroz Bin Mehat</cite></footer>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-light bg-light text-center">
+                    <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                    <div class="card-body blockquote">
+                      <p class="card-text">“Incredibly valuable information – I'd definitely suggest parents of kids facing challenges and those with dyslexia to check this place out. Absolutely top-notch! A big thanks to Mr. Arif and Mrs. Julie for the exceptional service and support.”</p>
+                      <br>
+                      <footer class="blockquote-footer"><cite title="Source Title">Pn. Norhayati Yusof</cite></footer>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-light bg-light text-center">
+                    <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                    <div class="card-body blockquote">
+                      <p class="card-text">“Praise be to Allah, my daughter Auliyawas here – she's gone from zero to hero. A heartfelt thank you to the teaching team; your assistance has been immense. Before Auliya came here, she struggled with reading, but today, she's full of 
+pride, often telling us, "Auliya can read," and as her bonda, I couldn't be prouder..”</p>
+                      <br>
+                      <footer class="blockquote-footer"><cite title="Source Title">Pn. Nik Nurul Hamizah Nik Mohd Hussain</cite></footer>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-light bg-light text-center">
+                    <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                    <div class="card-body blockquote">
+                      <p class="card-text">“I'd like to express my gratitude to the dedicated and patient teachers at BioDyslexia, particularly Teacher Nuh, Teacher Thiviya, and Mrs. Julie, for their outstanding efforts in teaching Amir. Their diligence has paid off brilliantly. Amir's journey from struggling to succeeding is a testament to the effectiveness of their hard work and support. He's transformed from zero to 
+                                            hero, all thanks to the incredible 
+                                            guidance provided by these teachers..” </p>
+                      <br>
+                      <footer class="blockquote-footer"><cite title="Source Title">Madam Nurul Farhana Mohd Ishak</cite></footer>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-light bg-light text-center">
+                    <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                    <div class="card-body blockquote">
+                      <p class="card-text">“Yesterday, a new chapter unfolded; last 
+                                            week marked Along's final tuition 
+                                            session, and just last night, I had the 
+                                            pleasure of meeting his beloved Teacher 
+                                            Julie Safri. Over the past year at this 
+                                            tuition center, he gained a wealth of 
+                                            knowledge that's truly unique. Grateful 
+                                            acknowledgments extend to all the 
+                                            teachers, who've relentlessly and 
+                                            patiently guided Mubin's learning 
+                                            journey </p>
+                      <br>
+                      <footer class="blockquote-footer"><cite title="Source Title">Madam Sue Samsudi</cite></footer>
+                    </div>
+                  </div>
+                </div>
+
+                
+
+                <div class="col-md-6 col-lg-4">
+                  <div class="card border-light bg-light text-center">
+                    <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                    <div class="card-body blockquote">
+                      <p class="card-text">“Huge thanks to Teacher Julie for 
+                                            providing an opportunity for our dyslexic 
+                                            teen, Alyaa. It's been quite a journey as 
+                                            our eldest, Alyaa, got to join the dyslexia 
+                                            class alongside her younger sister 
+                                            Arianna. Since 2008, we've been 
+                                            searching for a suitable center near our 
+                                            home, and we're grateful we found this 
+                                            one. A heartfelt thank you to Teacher 
+                                            Thiviya and Teacher Din for their 
+                                            unwavering support during the online 
+                                            classes even during the PKP 3.0 period. 
+                                            Their dedication has resulted in a 
+                                            remarkable boost in confidence, evident 
+                                            in both girls' performance during the 
+                                            mid-year exams. Ariana, who used to 
+                                            struggle with 4 subjects (BM, Arabic, 
+                                            Jawi, Math) and had difficulty 
+                                            comprehending at school, managed to 
+                                            pass all for the first time. Alyaa, despite 
+                                            frequently being absent due to 
+                                            centralized training for MSSS and MSSSM 
+                                            PPKI, excelled in all subjects. Your 
+                                            dedication is truly appreciated...” </p>
+                      <br>
+                      <footer class="blockquote-footer"><cite title="Source Title">Madam Feeda Fzl</cite></footer>
+                    </div>
+                  </div>
+                </div>
+
+                
+
+              </div>
+            </div>
+            </div>
+            <br><br>
+              <!--FOOTER STARTS HERE-->
             <footer class="footer">
     <div class="waves">
       <div class="wave" id="wave1"></div>
@@ -375,6 +519,8 @@
     </ul>
     <p>&copy;2024 BioDyslexia.com | All Rights Reserved</p>
   </footer>
+</div>
+      <!--FOOTER ENDS HERE-->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
                         </div>

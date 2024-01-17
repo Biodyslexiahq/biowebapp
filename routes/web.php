@@ -59,7 +59,7 @@ Route::get('Teacher',[Controller::class,'teacher']);
 
 
 //CHATBOX PUSHER//
-Route::get('/', 'app\Http\Controllers\PusherController@index');
+//Route::get('/', 'app\Http\Controllers\PusherController@index');//
 Route::post('/broadcast', 'app\Http\Controllers\PusherController@broadcast');
 Route::post('/receive', 'app\Http\Controllers\PusherController@receive');
 //CHATBOX PUSHER//
