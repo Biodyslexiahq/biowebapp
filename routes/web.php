@@ -44,7 +44,11 @@ Route::get('Arifulbio',[Controller::class,'arifulbio']);
 Route::get('Idrisbio',[Controller::class,'idrisbio']);
 Route::get('Nohbio',[Controller::class,'nohbio']);
 Route::get('Childrensuccess',[Controller::class,'childrensuccess']);
-
+Route::get('MMI',[Controller::class,'mmi']);
+Route::get('Bioiqra1',[Controller::class,'bioiqra1']);
+Route::get('Bioiqra2',[Controller::class,'bioiqra2']);
+Route::get('Bioiqrainfo',[Controller::class,'bioiqrainfo']);
+Route::get('Programschedule',[Controller::class,'programschedule']);
 
 //FORM//
 Route::post('/addappdata',[Appointmentcontroller::class, 'addappdata'])->name('addappdata');

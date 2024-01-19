@@ -18,13 +18,13 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="vh-100 overflow-auto antialiased">
+<body class="vh-100 overflow-auto antialiased foundationprog">
     <!--NAVBAR IMPLEMENTATION-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
                 <div>
-                  <a href="/"><img src="{{ URL::asset('/images/mainlogo.jpg')}}" alt="mainlogo" style="width:290px;height:80px"></a>
+                <a href="/"><img src="{{ URL::asset('/images/biologo.png')}}" alt="mainlogo" style="width:px;height:100px"></a>
                 </div>
               <!--NAVBAR BUTTON-->
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -59,10 +59,28 @@
                         <div class="dropdown-menu">
                             <a href="/Introductionletters"class="dropdown-item">Introduction Letter</a>
                             <a href="/Foundationprog" class="dropdown-item">BioDyslexia 4M Foundation Programme<br> (All Ages)</a>
-                            <a href="#" class="dropdown-item">BioDyslexia MMI Techniques Programme<br> (For Elementary & Secondary Students)</a>
+                            <a href="/MMI" class="dropdown-item">BioDyslexia MMI Techniques Programme<br> (For Elementary & Secondary Students)</a>
                             <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">BioIqra' 1 (Islamic Programme)</a>
-                            <a href="#"class="dropdown-item">BioIqra' 2 (Islamic Programme)</a>
+                            <a href="/Bioiqra1" class="dropdown-item">BioIqra' 1 (Islamic Programme)</a>
+                            <a href="/Bioiqra2"class="dropdown-item">BioIqra' 2 (Islamic Programme)</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="/Programschedule"class="dropdown-item"> Programme Schedule</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown text-white">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EIU</a>
+                        <div class="dropdown-menu">
+                            <a href="#"class="dropdown-item">Courses for Teachers &amp; Parents</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown text-white">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Buy a Book</a>
+                        <div class="dropdown-menu">
+                            <a href="https://www.amazon.com/Comes-BioDyslexia-Commander-Dyslexia-Defenders/dp/9358830433"class="dropdown-item">Amazon</a>
+                            <a href="https://www.kobo.com/hk/en/ebook/here-comes-biodyslexia-the-commander-of-the-dyslexia-defenders"class="dropdown-item">Rakuten Kobo</a>
+                            <a href="https://www.booktopia.com.au/here-comes-biodyslexia-the-commander-of-the-dyslexia-defenders--sri-juliana-safri/ebook/9789358830422.html"class="dropdown-item">Booktopia</a>
+                            <a href="https://www.indigo.ca/en-ca/here-comes-biodyslexia-the-commander-of-the-dyslexia-defenders/9789358830439.html"class="dropdown-item">Indigo</a>
+                            <a href="https://www.betterworldbooks.com/product/detail/here-comes-biodyslexia-the-commander-of-the-dyslexia-defenders-9789358830439"class="dropdown-item">BetterWorldBooks</a>
                         </div>
                     </li>
                   </ul>
@@ -76,7 +94,6 @@
               </div>
             </div>
           </nav>
-
            <!--FAB IMPLEMENTATION-->
            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
               <div class="floating-container">
@@ -93,6 +110,28 @@
                   </span>
                 </div>
               </div>
+
+              <!--Main Content here-->
+              
+              <div class="container">
+                <section class="w-100 vh-100 d-flex flex-column justify-content-center align-items-center fs-1">
+                <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Welcome to 4M Foundation Program </h1>
+                <br>
+                <a href="#"><button class="button d-grid col-5 ml-auto mr-auto ">Register Here</button></a>
+                </section>
+              </div>
+
+              <div class="float-container bg-white" id="Frame">
+                <section class="float-child">
+                  <img src="/images/Program_media3.JPEG" alt="" class="w-100 Frame">
+                </section>
+              </div>
+
+
+              
+              
+
+             
               
               
 </body>

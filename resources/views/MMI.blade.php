@@ -14,13 +14,13 @@
         <link rel="stylesheet" href="{{ URL::asset('css/style.css')}}"/>
         <!--SWIPER JS IMPLEMENTATION-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <title>Multisensory Advantages</title>
+        <title>MMI</title>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="vh-100 overflow-auto antialiased">
-    <!--NAVBAR IMPLEMENTATION-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+<body class="vh-100 overflow-auto antialiased foundationprog">
+     <!--NAVBAR IMPLEMENTATION-->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
                 <div>
@@ -95,55 +95,28 @@
             </div>
           </nav>
 
-        <br><br>
-        <!--Dyslexia Info-->
+              <!--Main Content here-->
+              
+              <div class="container">
+                <section class="w-100 vh-100 d-flex flex-column justify-content-center align-items-center fs-1">
+                <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Welcome to MMI Techniques Program </h1>
+                <br>
+                <a href="#"><button class="button d-grid col-5 ml-auto mr-auto ">Register Here</button></a>
+                
+                </section>
+              </div>
 
-        <div class="container w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1">
-        </div>
-        
+              <div class="float-container bg-white" id="Frame">
+                <section class="float-child">
+                  <img src="/images/Program_media1.JPEG" alt="" class="w-100 Frame">
+                </section>
+              </div>
 
-        <div class="float-container bg-white  ">
-        <section class="float-child">
-        <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">Advantages of Multisensory?</h1>
-        <br>
-        <p><i class="fa-solid fa-check"></i> Improves memory by providing redundancy, reinforcement and using the whole brain. Multisensory exposure can result in better recognition.</p>
-        <br>
-        <p><i class="fa-solid fa-check"></i> Works for all kinds of learning styles: visual, auditory and kinaesthetic</p>
-        <br>
-        <p><i class="fa-solid fa-check"></i> Reduces cognitive load and promotes dual coding – more information is processed if split into and presented by several channels.</p>
-        <br>
-        <p><i class="fa-solid fa-check"></i> New multisensory associations in the brain can develop rapidly. Even alters responses in sensory areas of the brain.</p>
-        <br>
-        <p><i class="fa-solid fa-check"></i> Neural plasticity – The brain’s ability to reorganize itself and form new connections throughout life – is highly enhanced, especially if the multisensory learning starts early in the child’s life.</p>
-        <br>
-        <p><i class="fa-solid fa-check"></i> Increases concentration and focus</p>
-        <br>
-        <p><i class="fa-solid fa-check"></i> Increases opportunity for choice and self determination and improves communication and sharing.</p>
-        <br>
-        </section>
+              
+              
 
-        <section class="float-child">
-        <img src="/images/teaching.jpg" alt="heartmath logo" class="ml-auto mr-auto w-50"><br>
-      
-        </section>
-        
-        </div>
-
-        <!--FAB IMPLEMENTATION-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-              <div class="floating-container">
-                <div class="floating-button">+</div>
-                <div class="element-container">
-
-                  <a href="https://api.whatsapp.com/send?phone=60193769940&text=Hey%2C%20I%20would%20like%20to%20check%20for%20time%20availability%20please." span class="float-element tooltip-left">
-                    <i class="material-icons">phone</i></a>
-                  <a href="/Contactus" span class="float-element">
-                    <i class="material-icons">email</i></a>
-        
-                    <span class="float-element">
-                    <i class="material-icons">chat</i>
-                  </span>
-                </div>
-              </div> 
+             
+              
+              
 </body>
 </html>

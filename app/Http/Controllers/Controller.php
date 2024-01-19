@@ -117,6 +117,27 @@ class Controller extends BaseController
     {
         return view("Childrensuccess");
     }
+    public function mmi()
+    {
+        return view("MMI");
+    }
+    public function bioiqra1()
+    {
+        return view("Bioiqra1");
+    }
+    public function bioiqra2()
+    {
+        return view("Bioiqra2");
+    }
+    public function bioiqrainfo()
+    {
+        return view("Bioiqrainfo");
+    }
+    public function programschedule()
+    {
+        return view("Programschedule");
+    }
+
 
 
 

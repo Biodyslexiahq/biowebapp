@@ -19,12 +19,12 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="vh-100 overflow-auto antialiased childeva">
-    <!--NAVBAR IMPLEMENTATION-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+   <!--NAVBAR IMPLEMENTATION-->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
                 <div>
-                  <a href="/"><img src="{{ URL::asset('/images/mainlogo.jpg')}}" alt="mainlogo" style="width:290px;height:80px"></a>
+                <a href="/"><img src="{{ URL::asset('/images/biologo.png')}}" alt="mainlogo" style="width:px;height:100px"></a>
                 </div>
               <!--NAVBAR BUTTON-->
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -59,10 +59,12 @@
                         <div class="dropdown-menu">
                             <a href="/Introductionletters"class="dropdown-item">Introduction Letter</a>
                             <a href="/Foundationprog" class="dropdown-item">BioDyslexia 4M Foundation Programme<br> (All Ages)</a>
-                            <a href="#" class="dropdown-item">BioDyslexia MMI Techniques Programme<br> (For Elementary & Secondary Students)</a>
+                            <a href="/MMI" class="dropdown-item">BioDyslexia MMI Techniques Programme<br> (For Elementary & Secondary Students)</a>
                             <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">BioIqra' 1 (Islamic Programme)</a>
-                            <a href="#"class="dropdown-item">BioIqra' 2 (Islamic Programme)</a>
+                            <a href="/Bioiqra1" class="dropdown-item">BioIqra' 1 (Islamic Programme)</a>
+                            <a href="/Bioiqra2"class="dropdown-item">BioIqra' 2 (Islamic Programme)</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="/Programschedule"class="dropdown-item"> Programme Schedule</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown text-white">
