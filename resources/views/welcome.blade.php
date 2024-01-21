@@ -70,7 +70,7 @@
                     <li class="nav-item dropdown text-white">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EIU</a>
                         <div class="dropdown-menu">
-                            <a href="#"class="dropdown-item">Courses for Teachers &amp; Parents</a>
+                            <a href="/Eiu"class="dropdown-item">Courses for Teachers &amp; Parents</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown text-white">
@@ -567,7 +567,7 @@ pride, often telling us, "Auliya can read," and as her bonda, I couldn't be prou
               </div>
               </div>
               </div>
-          
+
               
 
     <!--Swiper JS Script-->
@@ -593,6 +593,8 @@ pride, often telling us, "Auliya can read," and as her bonda, I couldn't be prou
       });
       });
     </script>
+
+    
   
  
   </body>

@@ -137,6 +137,10 @@ class Controller extends BaseController
     {
         return view("Programschedule");
     }
+    public function eiu()
+    {
+        return view("Eiu");
+    }
 
 
 

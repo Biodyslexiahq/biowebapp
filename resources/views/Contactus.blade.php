@@ -20,12 +20,12 @@
     </head>
 </head>
 <body class="vh-100 overflow-auto antialiased">
-   <!--NAVBAR IMPLEMENTATION-->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+  <!--NAVBAR IMPLEMENTATION-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
                 <div>
-                <a href="/"><img src="{{ URL::asset('/images/biologo.png')}}" alt="mainlogo" style="width:px;height:100px"></a>
+                  <a href="/"><img src="{{ URL::asset('/images/biologo.png')}}" alt="mainlogo" style="width:px;height:100px"></a>
                 </div>
               <!--NAVBAR BUTTON-->
               <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -71,7 +71,7 @@
                     <li class="nav-item dropdown text-white">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EIU</a>
                         <div class="dropdown-menu">
-                            <a href="#"class="dropdown-item">Courses for Teachers &amp; Parents</a>
+                            <a href="/Eiu"class="dropdown-item">Courses for Teachers &amp; Parents</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown text-white">

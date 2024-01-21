@@ -1576,6 +1576,8 @@ mark { padding: 0 0.1em; }
     .link:hover .icon:nth-child(2) {
       transform: translate(0px);
     }
+
+    /*LOADER HERE*/
     
   
 
