@@ -2,10 +2,13 @@
 
 use App\Http\Controllers\Appointmentcontroller;
 use App\Http\Controllers\Contactuscontroller;
+use App\Http\Controllers\Homecontroller;
 use App\Models\ContactusDataModel;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Appointment;
+use App\Http\Controllers\ProfileController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -56,6 +59,12 @@ Route::post('/addappdata',[Appointmentcontroller::class, 'addappdata'])->name('a
 Route::post('/addcontactusdata',[Contactuscontroller::class, 'addcontactusdata'])->name('addcontactusdata');
 //FORM//
 
+//SPATIE VALIDATION//
+Route::get('dashboard', [Homecontroller::class, 'index'])->middleware('auth')->name('home');
+
+
+//SPATIE VALIDATION//
+
 Route::get('Booking2',[Controller::class,'booking2']);
 Route::get('Admin',[Controller::class,'admin']);
 Route::get('Default',[Controller::class,'default']);
@@ -68,17 +77,17 @@ Route::get('Teacher',[Controller::class,'teacher']);
 Route::post('/broadcast', 'app\Http\Controllers\PusherController@broadcast');
 Route::post('/receive', 'app\Http\Controllers\PusherController@receive');
 //CHATBOX PUSHER//
-Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+
 
 Route::view('teacher', 'teacher')
     ->middleware(['auth', 'verified'])
     ->name('teacher');
 
-Route::view('profile', 'profile')
-    ->middleware(['auth'])
-    ->name('profile');
+    Route::middleware('auth')->group(function () {
+        Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+        Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+        Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    });
 
     Route::view('welcome', 'welcome')
     ->middleware(['auth', 'verified'])

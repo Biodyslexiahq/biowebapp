@@ -22,7 +22,7 @@
                 <!--<a href="/" wire:navigate>
                     <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
                 </a>-->
-                <h1>Hello again, we are happy to see you back!</h1>
+                <h1>Welcome to BioDyslexia.com!</h1>
             </div>
             
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
