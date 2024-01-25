@@ -21,6 +21,13 @@
 
                 <!-- Personalized Greeting -->
                 <p>Great to see you here.</p><br>
+                <a href="{{ route('admin.manage-user') }}" class="btn btn-primary">Manage User</a>
+                <a href="{{ route('admin.admin-has-roles') }}" class="btn btn-primary">Manage Roles</a>
+                <div class="mt-4">
+                    <p>Name: {{ Auth::user()->name }}</p>
+                    <p>Email: {{ Auth::user()->email }}</p>
+                    
+                </div>
               
 
             </div>

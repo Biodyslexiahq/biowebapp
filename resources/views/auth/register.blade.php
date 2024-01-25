@@ -39,24 +39,14 @@
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
         </div>
 
-        <!-- Add this section for role selection -->
-        <div class="form-group row">
-                                <label for="role" class="col-md-4 col-form-label text-md-right">{{ __('Role') }}</label>
-
-                                <div class="col-md-6">
-                                    <select id="role_id" name="role" class="form-control">
-                                        <option value="user">Client</option>
-                                        <option value="teacher">Teacher</option>
-                                        <option value="admin">Admin</option>
-                                    </select>
-
-                                    @error('role')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                        </span>
-                                    @enderror
-                                </div>
-                            </div>
+         <!-- Add this section for role selection -->
+         <div class="form-group">
+        <label for="role">Select Role:</label>
+        <select name="role" id="role" class="form-control">
+            <option value="User">User</option>
+            <option value="Teacher">Teacher</option>
+        </select>
+    </div>
 
         <div class="flex items-center justify-end mt-4">
             <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">

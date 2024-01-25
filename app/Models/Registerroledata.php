@@ -5,7 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Biowebclient extends Model
+class Registerroledata extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['role'];
 }

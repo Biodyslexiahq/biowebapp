@@ -3,11 +3,13 @@
 use App\Http\Controllers\Appointmentcontroller;
 use App\Http\Controllers\Contactuscontroller;
 use App\Http\Controllers\Homecontroller;
+use App\Http\Controllers\RegisterController;
 use App\Models\ContactusDataModel;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Appointment;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -57,6 +59,9 @@ Route::get('Eiu',[Controller::class,'eiu']);
 //FORM//
 Route::post('/addappdata',[Appointmentcontroller::class, 'addappdata'])->name('addappdata');
 Route::post('/addcontactusdata',[Contactuscontroller::class, 'addcontactusdata'])->name('addcontactusdata');
+Route::post('/register',[RegisterController::class, 'register'])->name('register');
+
+
 //FORM//
 
 //SPATIE VALIDATION//
@@ -88,6 +93,19 @@ Route::view('teacher', 'teacher')
         Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
         Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     });
+
+    Route::group(['middleware' => ['auth', 'admin']], function() {
+        Route::get('manage-user', [AdminController::class, 'viewuser'])->name('admin.manage-user');
+        Route::get('/admin/update-role/{id}', [AdminController::class, 'updateRole'])->name('admin.updateRole');
+        Route::get('/admin/revert-role/{id}', [AdminController::class, 'revertRole'])->name('admin.revertRole');
+        Route::get('/admin/delete/{id}', [AdminController::class, 'delete'])->name('admin.deleteUser');
+        Route::get('admin-has-roles', [AdminController::class, 'modelHasRoles'])->name('admin.admin-has-roles');
+        Route::get('/admin/model_has_roles', [AdminController::class, 'modelHasRoles'])->name('admin.model_has_roles');
+        Route::delete('/admin/model_has_roles/{id}', [AdminController::class, 'deleteModelHasRole'])->name('admin.model_has_roles.delete');
+        Route::patch('/admin/model_has_roles/{id}', [AdminController::class, 'altermodelid'])->name('admin.model_has_roles.update');
+        Route::get('/admin/model_has_roles', [AdminController::class, 'showid'])->name('admin.model_has_roles');
+        Route::patch('/admin/model_has_roles/{id}', [AdminController::class, 'alterroleid'])->name('admin.model_has_roles.update');
+      });
 
     Route::view('welcome', 'welcome')
     ->middleware(['auth', 'verified'])

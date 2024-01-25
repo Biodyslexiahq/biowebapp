@@ -55,6 +55,12 @@
     text-shadow: 1px 1px 4px #fff;
     font-size: 25px;
 }
+.centered-text3{
+  text-align: center;
+   color: black;
+   text-shadow: 1px 1px 4px #fff;
+   font-size: 19px;
+  }
 .scroll {
    
     overflow-x: hidden;
