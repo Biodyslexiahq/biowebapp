@@ -19,7 +19,22 @@
                 <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
                   <ul class="navbar-nav fs-5 flex-grow-1 pe-3">
                     <li class="nav-item">
-                      <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.admin-has-roles') }}">Manage Roles</a>
+                      <a class="nav-link active text-black" aria-current="page" href="/">Student List</a>
+                    </li>
+                    <li class="nav-item mx-2 ">
+                      <a class="nav-link text-black" href="/Aboutusselection">Study Progress</a>
+                    </li>
+                    <li class="nav-item mx-2 ">
+                      <a class="nav-link text-black" href="/Aboutusselection">Exam</a>
+                    </li>
+                    <li class="nav-item mx-2 ">
+                      <a class="nav-link text-black" href="/Aboutusselection">Attendance Link</a>
+                    </li>
+                    <li class="nav-item mx-2 ">
+                      <a class="nav-link text-black" href="/Aboutusselection">Teacher IEP</a>
+                    </li>
+                    <li class="nav-item mx-2 ">
+                      <a class="nav-link text-black" href="/Aboutusselection">Teacher Coheran</a>
                     </li>     
                   </ul>
                 </div>

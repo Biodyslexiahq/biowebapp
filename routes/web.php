@@ -95,10 +95,8 @@ Route::view('teacher', 'teacher')
     });
 
     Route::group(['middleware' => ['auth', 'admin']], function() {
-        Route::get('manage-user', [AdminController::class, 'viewuser'])->name('admin.manage-user');
-        Route::get('/admin/update-role/{id}', [AdminController::class, 'updateRole'])->name('admin.updateRole');
-        Route::get('/admin/revert-role/{id}', [AdminController::class, 'revertRole'])->name('admin.revertRole');
-        Route::get('/admin/delete/{id}', [AdminController::class, 'delete'])->name('admin.deleteUser');
+        Route::get('manage-user', [AdminController::class, 'deleteid'])->name('admin.manage-user');
+        Route::get('/admin/delete/{id}', [AdminController::class, 'deleteid'])->name('admin.delete');
         Route::get('admin-has-roles', [AdminController::class, 'modelHasRoles'])->name('admin.admin-has-roles');
         Route::get('/admin/model_has_roles', [AdminController::class, 'modelHasRoles'])->name('admin.model_has_roles');
         Route::delete('/admin/model_has_roles/{id}', [AdminController::class, 'deleteModelHasRole'])->name('admin.model_has_roles.delete');

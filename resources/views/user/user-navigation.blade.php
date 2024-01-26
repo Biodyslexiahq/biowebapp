@@ -1,26 +1,30 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
-    <div class="container-fluid">
-
-        <a class="navbar-brand" href="{{ route('home') }}">
-            <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}">
-                        Home
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="navbar-nav">
+<nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <!--NAVBAR LOGO-->
+                <div class="navbar-brand">
+                  <a href="{{ route('home') }}"><img src="{{ URL::asset('/images/biologo.png')}}" alt="mainlogo" style="width:px;height:100px"></a>
+                </div>
+              <!--NAVBAR BUTTON-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!--SIDEBAR-->
+              <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!--SIDEBAR HEADER-->
+                <div class="offcanvas-header text-black border-bottom shadow-none">
+                  <h5 class="offcanvas-title " id="offcanvasNavbarLabel">Teacher Dashboard</h5>
+                  <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!--SIDEBAR BODY-->
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                  <ul class="navbar-nav fs-5 flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active text-black" aria-current="page" href="/">Child Info</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="navbar-nav">
             <div class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -38,5 +42,5 @@
                 </ul>
             </div>
         </div>
-    </div>
-</nav>
+            </div>
+          </nav>

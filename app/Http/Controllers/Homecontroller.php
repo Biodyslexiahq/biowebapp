@@ -14,6 +14,8 @@ class Homecontroller extends Controller
                 return view('admin.index');
             }else if ($user->hasRole('user')) {
                 return view('user.index');
+            }else if($user->hasRole('teacher')){
+                return view('teacher.index');
             }
             
         }else{
