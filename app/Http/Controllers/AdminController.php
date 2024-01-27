@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Models\ContactusDataModel;
+
 
 class AdminController extends Controller
 {
@@ -33,12 +37,6 @@ class AdminController extends Controller
         return redirect()->route('admin.admin-has-roles')->with('success','Model id has been updated according to the id');
     }
 
-    public function showid(Request $request, $id, $model_id)
-    {
-       \DB::table('model_has_roles')->where('model_id',$model_id)->get();
-
-    }
-
     public function alterroleid(Request $request, $role_id)
     {
         \DB::table('model_has_roles')->where('role_id',$role_id)->update([
@@ -46,6 +44,13 @@ class AdminController extends Controller
         ]);
 
         return redirect()->route('admin.admin-has-roles')->with('success','Role id has been updated according to the id');
+    }
+    
+    public function viewcontact()
+    {
+        $contactdata = \DB::table('contactus')->get();
+
+        return view('admin.admin-contact', compact('contactdata'));
     }
     
 }

@@ -20,7 +20,14 @@
                   <ul class="navbar-nav fs-5 flex-grow-1 pe-3">
                     <li class="nav-item">
                       <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.admin-has-roles') }}">Manage Roles</a>
-                    </li>     
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.admin-has-roles') }}">GoDaddy.com</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.admin-contact') }}">Contact us </a>
+                    </li>
+                         
                   </ul>
                 </div>
               </div>
