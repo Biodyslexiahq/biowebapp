@@ -105,6 +105,7 @@ Route::view('teacher', 'teacher')
         Route::patch('/admin/model_has_roles/{id}', [AdminController::class, 'alterroleid'])->name('admin.model_has_roles.update');
         Route::get('admin.index', [AdminController::class, 'contactus']);
         Route::get('admin.admin-contact', [AdminController::class, 'viewcontact'])->name('admin.admin-contact');
+        Route::get('admin.admin-booking',[AdminController::class, 'viewbooking'])->name('admin.admin-booking');
       });
 
     Route::view('welcome', 'welcome')

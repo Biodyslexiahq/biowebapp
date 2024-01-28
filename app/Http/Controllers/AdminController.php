@@ -6,7 +6,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Models\ContactusDataModel;
+
 
 
 class AdminController extends Controller
@@ -51,6 +51,12 @@ class AdminController extends Controller
         $contactdata = \DB::table('contactus')->get();
 
         return view('admin.admin-contact', compact('contactdata'));
+    }
+
+    public function viewbooking()
+    {
+        $bookingdatas = \DB::table('appointment')->get();
+        return view('admin.admin-booking' , compact('bookingdatas'));
     }
     
 }

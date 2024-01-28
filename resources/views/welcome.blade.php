@@ -71,6 +71,8 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EIU</a>
                         <div class="dropdown-menu">
                             <a href="/Eiu"class="dropdown-item">Courses for Teachers &amp; Parents</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#"class="dropdown-item">Personal chat</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown text-white">
@@ -550,7 +552,7 @@ pride, often telling us, "Auliya can read," and as her bonda, I couldn't be prou
                     <i class="material-icons">email</i></a>
         
                     <span class="float-element">
-                    <i class="material-icons">lock</i>
+                    <i class="material-icons">chat</i>
                   </span>
                 </div>
               </div>     

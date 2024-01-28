@@ -22,10 +22,13 @@
                       <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.admin-has-roles') }}">Manage Roles</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.admin-has-roles') }}">GoDaddy.com</a>
+                      <a class="nav-link active text-black" aria-current="page" href="https://www.godaddy.com/en-my">GoDaddy.com</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.admin-contact') }}">Contact us </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.admin-booking') }}">Booking Data </a>
                     </li>
                          
                   </ul>
