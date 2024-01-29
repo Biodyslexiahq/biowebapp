@@ -106,6 +106,8 @@ Route::view('teacher', 'teacher')
         Route::get('admin.index', [AdminController::class, 'contactus']);
         Route::get('admin.admin-contact', [AdminController::class, 'viewcontact'])->name('admin.admin-contact');
         Route::get('admin.admin-booking',[AdminController::class, 'viewbooking'])->name('admin.admin-booking');
+        Route::get('admin.Admin',[AdminController::class, 'managestudent'])->name('admin.Admin');
+
       });
 
     Route::view('welcome', 'welcome')

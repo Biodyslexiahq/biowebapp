@@ -59,4 +59,9 @@ class AdminController extends Controller
         return view('admin.admin-booking' , compact('bookingdatas'));
     }
     
+    public function managestudent()
+    {
+        $managestudent = \DB::table('student')->get();
+        return view('admin.Admin' , compact('managestudent'));
+    }
 }

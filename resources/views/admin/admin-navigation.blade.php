@@ -30,6 +30,9 @@
                     <li class="nav-item">
                       <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.admin-booking') }}">Booking Data </a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.Admin') }}">Manage Students </a>
+                    </li>
                          
                   </ul>
                 </div>

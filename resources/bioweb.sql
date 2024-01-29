@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 22, 2024 at 01:40 PM
+-- Generation Time: Jan 29, 2024 at 07:38 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -67,6 +67,13 @@ CREATE TABLE `appointment` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `appointment`
+--
+
+INSERT INTO `appointment` (`id`, `parentsname`, `studentssname`, `studentsage`, `address`, `contactnum`, `email`, `date`, `time`, `assessmentopt`, `paymentopt`, `created_at`, `updated_at`) VALUES
+(1, 'Marzuki', 'Adam', '24', 'No 28 Jalan 8/11', '0182250171', 'adam@gmail.com', '2024-01-24', '00:00:02', 'Assessment with Report', 'Online Banking', NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -94,6 +101,26 @@ CREATE TABLE `attendance_staff` (
   `AttendanceDate` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `Location` varchar(255) DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `booking_table`
+--
+
+CREATE TABLE `booking_table` (
+  `ID` bigint(20) NOT NULL,
+  `Parents_name` longtext CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `Student_name` longtext CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `Student_age` bigint(20) NOT NULL,
+  `Address` longtext CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `Contact_number` int(25) NOT NULL,
+  `Email` longtext CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `Date` date NOT NULL,
+  `Time` time NOT NULL,
+  `Assessment_type` longtext CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `Payment_type` longtext CHARACTER SET utf8 COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -148,6 +175,13 @@ CREATE TABLE `contactus` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `contactus`
+--
+
+INSERT INTO `contactus` (`id`, `name`, `email`, `subject`, `message`, `created_at`, `updated_at`) VALUES
+(1, 'Adam Yussof', 'adam@gmail.com', 'Performance issue', 'i would like to report something.. and its pretty much uncool', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -632,10 +666,47 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (1, '2014_10_12_000000_create_users_table', 1),
 (2, '2014_10_12_100000_create_password_reset_tokens_table', 1),
 (3, '2019_08_19_000000_create_failed_jobs_table', 1),
-(4, '2019_12_14_000001_create_personal_access_tokens_table', 1),
-(5, '2023_12_07_233118_biowebclient', 2),
-(6, '2024_01_14_182227_appointment', 3),
-(7, '2024_01_14_233033_contactus', 3);
+(9, '2024_01_18_000502_add_role_to_users_table', 5),
+(10, '2024_01_18_173045_roletable', 6),
+(11, '2024_01_18_215741_add_roleid_to_users_table', 7),
+(13, '2019_12_14_000001_create_personal_access_tokens_table', 8),
+(14, '2023_12_07_233118_biowebclient', 8),
+(15, '2024_01_14_182227_appointment', 8),
+(16, '2024_01_14_233033_contactus', 8),
+(17, '2024_01_21_151610_create_permission_tables', 8);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `model_has_permissions`
+--
+
+CREATE TABLE `model_has_permissions` (
+  `permission_id` bigint(20) UNSIGNED NOT NULL,
+  `model_type` varchar(255) NOT NULL,
+  `model_id` bigint(20) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `model_has_roles`
+--
+
+CREATE TABLE `model_has_roles` (
+  `role_id` bigint(20) UNSIGNED NOT NULL,
+  `model_type` varchar(255) NOT NULL,
+  `model_id` bigint(20) UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `model_has_roles`
+--
+
+INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
+(1, 'App\\Models\\User', 11),
+(3, 'App\\Models\\User', 12),
+(3, 'App\\Models\\User', 13);
 
 -- --------------------------------------------------------
 
@@ -647,6 +718,27 @@ CREATE TABLE `password_reset_tokens` (
   `email` varchar(255) NOT NULL,
   `token` varchar(255) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `password_reset_tokens`
+--
+
+INSERT INTO `password_reset_tokens` (`email`, `token`, `created_at`) VALUES
+('adamyussof.marzuki@gmail.com', '$2y$12$uYGwfPbanNlKR6iWOeIPy.auxIrUsVRAyBT3u6gOfpp0hHLMoCUaK', '2024-01-16 09:20:40');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `permissions`
+--
+
+CREATE TABLE `permissions` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `guard_name` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -666,6 +758,40 @@ CREATE TABLE `personal_access_tokens` (
   `expires_at` timestamp NULL DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `roles`
+--
+
+CREATE TABLE `roles` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `guard_name` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `roles`
+--
+
+INSERT INTO `roles` (`id`, `name`, `guard_name`, `created_at`, `updated_at`) VALUES
+(1, 'admin', 'web', '2024-01-24 14:41:16', '2024-01-24 14:41:16'),
+(2, 'teacher', 'web', '2024-01-24 14:41:16', '2024-01-24 14:41:16'),
+(3, 'user', 'web', '2024-01-24 14:41:16', '2024-01-24 14:41:16');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `role_has_permissions`
+--
+
+CREATE TABLE `role_has_permissions` (
+  `permission_id` bigint(20) UNSIGNED NOT NULL,
+  `role_id` bigint(20) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1907,16 +2033,18 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `remember_token` varchar(100) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `role` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'accexp', 'accexp@gmx.com', NULL, '$2y$12$fTKzCDQ2diNa90zLZziTq.MzcH48Fma3/MylHIX.3umqoBPs/7HMO', NULL, '2023-12-15 18:54:56', '2023-12-15 18:54:56'),
-(3, 'Aqqil Azman', 'aqqil.azman99@gmail.com', NULL, '$2y$12$Z5muH.QwKoWaYeXARc4EJ.5.evAxPVVgXnsJ5ywpjjVPnCAaE9xym', NULL, '2024-01-09 23:24:38', '2024-01-09 23:24:38');
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `role`) VALUES
+(11, 'Biowebadmin@hq', 'biodyslexiahq@gmail.com', NULL, '$2y$12$73Vx5924YfiBpTfBAHgaROF.RGIng9ngkRuRaI7EJ/o04y1iGBCCO', NULL, '2024-01-21 09:37:04', '2024-01-21 09:37:04', 'admin'),
+(12, 'User', 'test@gmail.com', NULL, '$2y$12$2KxigsvWP1h.TM832k0wO.QvCieRiD0NjvSubMHFpDCnhJ0zBptzC', NULL, '2024-01-21 09:37:04', '2024-01-21 09:37:04', 'client'),
+(13, 'Adam', 'adamyussof.marzuki@gmail.com', NULL, '$2y$12$O1Qc6N66VsbVyynz1IiefOL6Ka4P2BGHrkduIQZCGTQnQtPH1aITW', NULL, '2024-01-26 10:27:36', '2024-01-26 10:27:36', 'Teacher');
 
 --
 -- Indexes for dumped tables
@@ -1939,6 +2067,12 @@ ALTER TABLE `attendance`
 --
 ALTER TABLE `attendance_staff`
   ADD PRIMARY KEY (`AttendID`);
+
+--
+-- Indexes for table `booking_table`
+--
+ALTER TABLE `booking_table`
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- Indexes for table `client_info`
@@ -1984,28 +2118,37 @@ ALTER TABLE `lesson`
   ADD PRIMARY KEY (`LessonID`);
 
 --
--- Indexes for table `level`
---
-ALTER TABLE `level`
-  ADD PRIMARY KEY (`LevelID`);
-
---
--- Indexes for table `levelexam`
---
-ALTER TABLE `levelexam`
-  ADD PRIMARY KEY (`LevelExamID`);
-
---
 -- Indexes for table `migrations`
 --
 ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `model_has_permissions`
+--
+ALTER TABLE `model_has_permissions`
+  ADD PRIMARY KEY (`permission_id`,`model_id`,`model_type`),
+  ADD KEY `model_has_permissions_model_id_model_type_index` (`model_id`,`model_type`);
+
+--
+-- Indexes for table `model_has_roles`
+--
+ALTER TABLE `model_has_roles`
+  ADD PRIMARY KEY (`role_id`,`model_id`,`model_type`),
+  ADD KEY `model_has_roles_model_id_model_type_index` (`model_id`,`model_type`);
+
+--
 -- Indexes for table `password_reset_tokens`
 --
 ALTER TABLE `password_reset_tokens`
   ADD PRIMARY KEY (`email`);
+
+--
+-- Indexes for table `permissions`
+--
+ALTER TABLE `permissions`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `permissions_name_guard_name_unique` (`name`,`guard_name`);
 
 --
 -- Indexes for table `personal_access_tokens`
@@ -2016,22 +2159,20 @@ ALTER TABLE `personal_access_tokens`
   ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
 
 --
--- Indexes for table `studentsubtopic`
+-- Indexes for table `roles`
 --
-ALTER TABLE `studentsubtopic`
-  ADD PRIMARY KEY (`StudentProgressID`);
+ALTER TABLE `roles`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `roles_name_guard_name_unique` (`name`,`guard_name`),
+  ADD UNIQUE KEY `id_2` (`id`),
+  ADD KEY `id` (`id`);
 
 --
--- Indexes for table `subject`
+-- Indexes for table `role_has_permissions`
 --
-ALTER TABLE `subject`
-  ADD PRIMARY KEY (`SubjectID`);
-
---
--- Indexes for table `subtopic`
---
-ALTER TABLE `subtopic`
-  ADD PRIMARY KEY (`topicID`);
+ALTER TABLE `role_has_permissions`
+  ADD PRIMARY KEY (`permission_id`,`role_id`),
+  ADD KEY `role_has_permissions_role_id_foreign` (`role_id`);
 
 --
 -- Indexes for table `users`
@@ -2048,19 +2189,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `appointment`
 --
 ALTER TABLE `appointment`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `attendance`
---
-ALTER TABLE `attendance`
-  MODIFY `attendanceID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `attendance_staff`
---
-ALTER TABLE `attendance_staff`
-  MODIFY `AttendID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `client_info`
@@ -2069,28 +2198,10 @@ ALTER TABLE `client_info`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `coheran`
---
-ALTER TABLE `coheran`
-  MODIFY `coheranID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `contactus`
 --
 ALTER TABLE `contactus`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `courses`
---
-ALTER TABLE `courses`
-  MODIFY `courseID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `enrollment`
---
-ALTER TABLE `enrollment`
-  MODIFY `enrolID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -2099,28 +2210,16 @@ ALTER TABLE `failed_jobs`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `lesson`
---
-ALTER TABLE `lesson`
-  MODIFY `LessonID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=213;
-
---
--- AUTO_INCREMENT for table `level`
---
-ALTER TABLE `level`
-  MODIFY `LevelID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
-
---
--- AUTO_INCREMENT for table `levelexam`
---
-ALTER TABLE `levelexam`
-  MODIFY `LevelExamID` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `permissions`
+--
+ALTER TABLE `permissions`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -2129,28 +2228,39 @@ ALTER TABLE `personal_access_tokens`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `studentsubtopic`
+-- AUTO_INCREMENT for table `roles`
 --
-ALTER TABLE `studentsubtopic`
-  MODIFY `StudentProgressID` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `subject`
---
-ALTER TABLE `subject`
-  MODIFY `SubjectID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
-
---
--- AUTO_INCREMENT for table `subtopic`
---
-ALTER TABLE `subtopic`
-  MODIFY `topicID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1135;
+ALTER TABLE `roles`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `model_has_permissions`
+--
+ALTER TABLE `model_has_permissions`
+  ADD CONSTRAINT `model_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `model_has_roles`
+--
+ALTER TABLE `model_has_roles`
+  ADD CONSTRAINT `model_has_roles_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `role_has_permissions`
+--
+ALTER TABLE `role_has_permissions`
+  ADD CONSTRAINT `role_has_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `role_has_permissions_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
