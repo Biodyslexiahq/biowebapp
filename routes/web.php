@@ -55,6 +55,7 @@ Route::get('Bioiqra2',[Controller::class,'bioiqra2']);
 Route::get('Bioiqrainfo',[Controller::class,'bioiqrainfo']);
 Route::get('Programschedule',[Controller::class,'programschedule']);
 Route::get('Eiu',[Controller::class,'eiu']);
+Route::get('Chat',[Controller::class,'chat']);
 
 //FORM//
 Route::post('/addappdata',[Appointmentcontroller::class, 'addappdata'])->name('addappdata');

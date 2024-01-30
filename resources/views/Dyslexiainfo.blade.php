@@ -99,22 +99,24 @@
 
         <!--Dyslexia Info-->
 
-        <div class="container">
-            <section class="w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1 ">
-            <h1 class="centered-text fade-in-text" style="font-family: Chewy;">What is Dyslexia?</h1>
-            </section>
+        <div class="container w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1">
         </div>
-        <div class="container">
-            <section class="w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1">
-            <small class="centered-text">
-            The word dyslexia comes from Greek and means ‘difficulty with words’. Around 10% of the population have some form of dyslexia related issues. Dyslexia could be thought of as a different learning ability rather than a disability. Dyslexic people, of all ages, can learn efficiently and effectively, but often need a different approach. Generally, dyslexia is known as a learning disability of a neurobiological cause. It is generally explained as a struggle of word recognition, spelling and decoding abilities. These difficulties are a result of a deficit in the phonological component of language typically result from a deficit in the phonological component of language. Other difficulties include comprehension and struggle of reading compared to people of their age group (International Dyslexia Association, 2002)
-            </small>
-            <br>
-            <small class="centered-text">
-                
-Symptoms of dyslexia arise in childhood when a child faces slow development in the aspects of reading, speech development, coordination and spelling to name a few.(Brazier, 2017). Dyslexia is independent of intelligence. The severity of dyslexia varies from one individual to another.According to the Malaysian statistics estimated by the Ministry of Health Malaysia (2017), around 4 to 8 percent of school going kids are dyslexic . The question here is, what about the children who are not enrolled in government schools? Dyslexia was present in the Diagnostic and Statistical Manual of Mental Disorders 4th Edition under the Learning Disorder category (American Psychological Association, 2019). Revisions in the manual resulted in the change from Learning Disorder to Specific Learning Disorder.
-            </small>
-            </section>
+
+        <div class="float-container bg-white overflow-auto">
+        <section class="float-child">
+        <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">What is Dyslexia?</h1>
+        <br>
+        <p style="text-align-last: justify">The word dyslexia comes from Greek and means ‘difficulty with words’. Around 10% of the population have some form of dyslexia related issues. Dyslexia could be thought of as a different learning ability rather than a disability. Dyslexic people, of all ages, can learn efficiently and effectively, but often need a different approach. Generally, dyslexia is known as a learning disability of a neurobiological cause. It is generally explained as a struggle of word recognition, spelling and decoding abilities. These difficulties are a result of a deficit in the phonological component of language typically result from a deficit in the phonological component of language. Other difficulties include comprehension and struggle of reading compared to people of their age group (International Dyslexia Association, 2002).</p>
+        <br>
+        <p>Symptoms of dyslexia arise in childhood when a child faces slow development in the aspects of reading, speech development, coordination and spelling to name a few.(Brazier, 2017). Dyslexia is independent of intelligence. The severity of dyslexia varies from one individual to another.According to the Malaysian statistics estimated by the Ministry of Health Malaysia (2017), around 4 to 8 percent of school going kids are dyslexic . The question here is, what about the children who are not enrolled in government schools? Dyslexia was present in the Diagnostic and Statistical Manual of Mental Disorders 4th Edition under the Learning Disorder category (American Psychological Association, 2019). Revisions in the manual resulted in the change from Learning Disorder to Specific Learning Disorder.</p>
+        </section>
+
+        <section class="float-child">
+        <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">Ready to evaluate ?</h1>
+        <br>
+        <a href="/Booking"><button class="button d-grid col-5 ml-auto mr-auto">Click Me</button></a>
+        </section>
+        
         </div>
 
         <!--FAB IMPLEMENTATION-->

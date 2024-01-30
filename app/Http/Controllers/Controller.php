@@ -141,7 +141,10 @@ class Controller extends BaseController
     {
         return view("Eiu");
     }
-
+    public function chat()
+    {
+        return view ("Chat");
+    }
 
 
 

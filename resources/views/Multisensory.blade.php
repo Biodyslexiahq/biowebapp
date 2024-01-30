@@ -115,7 +115,7 @@
         <img src="/images/multisensoryimg.jpg" alt="heartmath logo" class="ml-auto mr-auto"><br>
         <h1 class="centered-text2 fade-in-text" style="font-family: Oswald;">Ready to evaluate ?</h1>
         <br>
-        <a href="/Booking"><button class="button">Click Me</button></a>
+        <a href="/Booking"><button class="button d-grid col-5 ml-auto mr-auto">Click Me</button></a>
         </section>
         </div>
 

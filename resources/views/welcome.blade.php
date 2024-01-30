@@ -72,7 +72,7 @@
                         <div class="dropdown-menu">
                             <a href="/Eiu"class="dropdown-item">Courses for Teachers &amp; Parents</a>
                             <div class="dropdown-divider"></div>
-                            <a href="#"class="dropdown-item">Personal chat</a>
+                            <a href="/Chat"class="dropdown-item">Personal chat</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown text-white">
@@ -572,7 +572,7 @@ pride, often telling us, "Auliya can read," and as her bonda, I couldn't be prou
 
               
 
-    <!--Swiper JS Script-->
+    <!--Swiper JS Script
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src='https://code.jquery.com/jquery-1.8.2.js'></script>
 
@@ -594,7 +594,7 @@ pride, often telling us, "Auliya can read," and as her bonda, I couldn't be prou
       return false;
       });
       });
-    </script>
+    </script>-->
 
     
   
