@@ -19,8 +19,8 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="vh-100 overflow-auto antialiased staffbio">
- <!--NAVBAR IMPLEMENTATION-->
- <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+   <!--NAVBAR IMPLEMENTATION-->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
                 <div>
@@ -51,7 +51,7 @@
                         <div class="dropdown-menu">
                             <a href="/Booking"class="dropdown-item">BioDyslexia Educational Assessment</a>
                             <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">Other Bookings.</a>
+                            <a href="/Othersbook" class="dropdown-item">Student Registration</a>
                         </div>
                     </li>
                       <li class="nav-item dropdown text-white">
@@ -71,6 +71,8 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EIU</a>
                         <div class="dropdown-menu">
                             <a href="/Eiu"class="dropdown-item">Courses for Teachers &amp; Parents</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="/Chat"class="dropdown-item">Personal chat</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown text-white">
@@ -94,7 +96,6 @@
               </div>
             </div>
           </nav>
-
             
 
              <!--MAIN BIO START HERE-->

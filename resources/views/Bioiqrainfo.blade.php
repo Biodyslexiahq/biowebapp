@@ -49,7 +49,7 @@
                         <div class="dropdown-menu">
                             <a href="/Booking"class="dropdown-item">BioDyslexia Educational Assessment</a>
                             <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">Other Bookings.</a>
+                            <a href="/Othersbook" class="dropdown-item">Student Registration</a>
                         </div>
                     </li>
                       <li class="nav-item dropdown text-white">
@@ -69,6 +69,8 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">EIU</a>
                         <div class="dropdown-menu">
                             <a href="/Eiu"class="dropdown-item">Courses for Teachers &amp; Parents</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="/Chat"class="dropdown-item">Personal chat</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown text-white">
@@ -92,7 +94,6 @@
               </div>
             </div>
           </nav>
-
 
             <div class="container w-100 vh-100 d-flex flex-column justify-content-center allign-items-center fs-1">
             <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Bioiqra Info</h1>
