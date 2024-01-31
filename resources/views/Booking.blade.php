@@ -19,7 +19,6 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-   <!--NAVBAR IMPLEMENTATION-->
   <!--NAVBAR IMPLEMENTATION-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">

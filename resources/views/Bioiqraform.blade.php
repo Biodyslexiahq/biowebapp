@@ -14,13 +14,13 @@
         <link rel="stylesheet" href="{{ URL::asset('css/style.css')}}"/>
         <!--SWIPER JS IMPLEMENTATION-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <title>MMI</title>
+        <title>Bioiqra Form</title>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="vh-100 overflow-auto antialiased foundationprog">
-    <!--NAVBAR IMPLEMENTATION-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+<body class="foundationprog">
+     <!--NAVBAR IMPLEMENTATION-->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container">
                 <!--NAVBAR LOGO-->
                 <div>
@@ -95,28 +95,69 @@
             </div>
           </nav>
 
-              <!--Main Content here-->
-              
-              <div class="container">
-                <section class="w-100 vh-100 d-flex flex-column justify-content-center align-items-center fs-1">
-                <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Welcome to MMI Techniques Program </h1>
+          <!--Main Part Here-->
+          <div class="container display-flex justify-content-center align-items-center">
+            <div class="row border rounded-5 p-3 bg-white shadow box-area ml-auto mr-auto">
+                <h1 class="centered-text2" style="font-family: Poppins;">Program Registration For BioDyslexia</h1>
+                <br><br>
+                <div>
+                    <h4 class="centered-text3" style="font-family: Poppins;">Bioiqra Form</h4>
+                </div>
                 <br>
-                <a href="/Foundationform"><button class="button d-grid col-5 ml-auto mr-auto ">Register Here</button></a>
-                
-                </section>
-              </div>
-
-              <div class="float-container bg-white" id="Frame">
-                <section class="float-child">
-                  <img src="/images/Program_media1.JPEG" alt="" class="w-100 Frame">
-                </section>
-              </div>
-
-              
-              
-
-             
-              
-              
+                <div>
+                    <h1><b>BioIqra Physical Class (Monday-Friday 3 hour per class):</b></h1>
+                    <h1><b>(One Time Payment and non-refundable)</b></h1>
+                    <h1>Registration : RM 500</h1>
+                    <h1>Monthly Fee : RM 300 // Total : RM 800</h1><br><br>
+                    <h1><b>Online Class (Saturday only 4 hours per class) :</b></h1><br>
+                    <h1><b>(One Time Payment and non-refundable)</b></h1>
+                    <h1>Registration : RM 500</h1>
+                    <h1>Monthly Fee : RM 150 // Total : RM 650</h1><br><br>
+                    <h1><b>For BioDyslexia Educational Diagnostic Assessment Appointment please contact us via Whatsapp.</b></h1>
+                </div>
+                <div>
+                    <form action="" method="post">
+                    <div>
+                    <h4 class="centered-text3 mt-5" style="font-family: Poppins;">Preferer Programme</h4>
+                    </div>
+                    <div class="mb-3">
+                        <label for="programme" class="form-label" style="font-family:Poppins;" >Choose your Programme :</label>
+                        <select name="Bioiqraprog" id="bioiqraprog">
+                        <option disabled selected value> -- select an option -- </option>
+                            <option value="Daily Class (Monday to Friday) 9am - 12pm">Daily Class (Monday to Friday) 9am - 12pm</option>
+                            <option value="Daily Class (Monday to Friday) 2pm - 5pm">Daily Class (Monday to Friday) 2pm - 5pm</option>
+                            <option value="Saturday class 9 am - 12pm">Saturday class 9 am - 12pm</option>
+                            <option value="BioDyslexia Educational Assessment">Online BioDyslexia Educational Assessment (RM50)</option>
+                        </select>
+                        </div>
+                        <div>
+                        <h4 class="centered-text3 mt-5" style="font-family: Poppins;">Session Physical Class</h4>
+                        <h3 class="centered-text3 mb-5">For online class please mention the days and time prefer in the other section.</h3>
+                        </div>
+                        <div class="mb-3">
+                        <label for="ethnic" class="form-label" style="font-family:Poppins;" >Choose your time :</label>
+                        <select name="Sessionphysical" id="sessionphysical">
+                        <option disabled selected value> -- select an option -- </option>
+                            <option value="Morning (8:30am - 11:30am)">Morning (8:30am - 11:30am)</option>
+                            <option value="Morning (9:30am - 12:30pm)">Morning (9:30am - 12:30pm)</option>
+                            <option value="Evening (2:00pm - 5:00pm)">Evening (2:00pm - 5:00pm)</option>
+                        </select>
+                        <input type="text" class="form-label" name="Sessionphysical" placeholder="Online class here..">
+                        </div>
+                        <div class="mb-3">
+                        <label for="studentname" class="form-label " style="font-family:Poppins;">Student Name :</label>
+                        <input type="text" class="form-control" id="studentname" name="studentname">
+                        </div>
+                        <div class="mb-3">
+                        <label for="NRIC" class="form-label" style="font-family: Poppins;">NRIC :</label>
+                        <input type="text" class="form-control" id="nricid" name="nric">
+                        </div>
+                        <div class="mb-3 mt-5">
+                        <button type="submit" class="btn btn-outline-primary d-grid gap-2 col-5 ml-auto mr-auto">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+          </div>
 </body>
 </html>

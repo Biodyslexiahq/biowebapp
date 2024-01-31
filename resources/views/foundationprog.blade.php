@@ -117,7 +117,7 @@
                 <section class="w-100 vh-100 d-flex flex-column justify-content-center align-items-center fs-1">
                 <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Welcome to 4M Foundation Program </h1>
                 <br>
-                <a href="#"><button class="button d-grid col-5 ml-auto mr-auto ">Register Here</button></a>
+                <a href="/Foundationform"><button class="button d-grid col-5 ml-auto mr-auto ">Register Here</button></a>
                 </section>
               </div>
 

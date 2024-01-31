@@ -145,6 +145,18 @@ class Controller extends BaseController
     {
         return view ("Chat");
     }
+    public function othersbook()
+    {
+        return view('Othersbook');
+    }
+    public function Foundationform()
+    {
+        return view ('foundationform');
+    }
+    public function bioiqraform()
+    {
+        return view('Bioiqraform');
+    }
 
 
 

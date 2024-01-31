@@ -51,7 +51,7 @@
                         <div class="dropdown-menu">
                             <a href="/Booking"class="dropdown-item">BioDyslexia Educational Assessment</a>
                             <div class="dropdown-divider"></div>
-                            <a href="#" class="dropdown-item">Other Bookings.</a>
+                            <a href="/Othersbook" class="dropdown-item">Other Bookings.</a>
                         </div>
                     </li>
                       <li class="nav-item dropdown text-white">
