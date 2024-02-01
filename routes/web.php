@@ -111,6 +111,9 @@ Route::view('teacher', 'teacher')
         Route::get('admin.admin-contact', [AdminController::class, 'viewcontact'])->name('admin.admin-contact');
         Route::get('admin.admin-booking',[AdminController::class, 'viewbooking'])->name('admin.admin-booking');
         Route::get('admin.Admin',[AdminController::class, 'managestudent'])->name('admin.Admin');
+        Route::get('/students', 'StudentController@index');
+        Route::get('/students/add', 'StudentController@create');
+        Route::post('/students', 'StudentController@store');
 
       });
 
