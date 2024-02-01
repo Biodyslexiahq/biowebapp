@@ -8,25 +8,28 @@
                 <!-- Header content -->
             </header>
             <div class="content">
-                <div class="left-panel">
-                    <ul class="menu">
-                        <li><asp:LinkButton ID="studentListLink" runat="server" CssClass="active">Students</asp:LinkButton>
-                            <ul class="submenu">
-                                <li><asp:LinkButton ID="addStudentLink" runat="server" OnClick="addStudentLink_Click">Add Student</asp:LinkButton></li>
-                                <li><asp:LinkButton ID="editStudentLink" runat="server" OnClick="editStudentLink_Click">Edit Student</asp:LinkButton></li>
-                            </ul>
-                        </li>
-                        <li><asp:LinkButton ID="teacherLink" runat="server" CssClass="active">Teachers</asp:LinkButton>
-                            <ul class="submenu">
-                                <li><asp:LinkButton ID="addTeacherLink" runat="server" OnClick="addTeacherLink_Click">Add Teacher</asp:LinkButton></li>
-                                <li><asp:LinkButton ID="editTeacherLink" runat="server" OnClick="editTeacherLink_Click">Edit Teacher</asp:LinkButton></li>
-                            </ul>
-                        </li>
-                        
-                        <li><asp:LinkButton ID="studentProgressLink" runat="server" CssClass="active" OnClick="studentProgressLink_Click">Student Progress</asp:LinkButton></li>
-                        <li><asp:LinkButton ID="teacherProgressLink" runat="server" CssClass="active" OnClick="teacherProgressLink_Click">Teacher Progress</asp:LinkButton></li>
-                    </ul>
+                    <div class="left-panel">
+                        <ul class="menu">
+                            <li class="{{ Request::is('students*') ? 'active' : '' }}">
+                                <a href="{{ url('/students') }}">Students</a>
+                                <ul class="submenu">
+                                    <li><a href="{{ url('/students/add') }}">Add Student</a></li>
+                                    <li><a href="{{ url('/students/edit') }}">Edit Student</a></li>
+                                </ul>
+                            </li>
+                            <li class="{{ Request::is('teachers*') ? 'active' : '' }}">
+                                <a href="{{ url('/teachers') }}">Teachers</a>
+                                <ul class="submenu">
+                                    <li><a href="{{ url('/teachers/add') }}">Add Teacher</a></li>
+                                    <li><a href="{{ url('/teachers/edit') }}">Edit Teacher</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{{ url('/student-progress') }}">Student Progress</a></li>
+                            <li><a href="{{ url('/teacher-progress') }}">Teacher Progress</a></li>
+                        </ul>
+                    </div>
                 </div>
+
 
                 <div class="main-content">
                     <asp:Panel ID="addStudentPanel" runat="server">
