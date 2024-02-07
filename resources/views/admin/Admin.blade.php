@@ -1,3 +1,6 @@
+   @extends('admin.admin-master')
+   
+   @section('content')
    <header>
             <link rel="stylesheet" href="{{ URL::asset('css/stylesDashboard.css')}}">
     </header>
@@ -13,7 +16,7 @@
                             <li class="{{ Request::is('students*') ? 'active' : '' }}">
                                 <a href="{{ url('/students') }}">Students</a>
                                 <ul class="submenu">
-                                    <li><a href="{{ url('/students/add') }}">Add Student</a></li>
+                                    <li><a href="{{ route('admin.adminaddstudent') }}">Add Student</a></li>
                                     <li><a href="{{ url('/students/edit') }}">Edit Student</a></li>
                                 </ul>
                             </li>
@@ -436,3 +439,5 @@
             </div>
         </div>
     </form>
+
+    @endsection

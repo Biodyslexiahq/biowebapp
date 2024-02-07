@@ -4,6 +4,7 @@ use App\Http\Controllers\Appointmentcontroller;
 use App\Http\Controllers\Contactuscontroller;
 use App\Http\Controllers\Homecontroller;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\studenregcontroller;
 use App\Models\ContactusDataModel;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
@@ -65,6 +66,7 @@ Route::get('Bioiqraform', [Controller::class,'bioiqraform']);
 Route::post('/addappdata',[Appointmentcontroller::class, 'addappdata'])->name('addappdata');
 Route::post('/addcontactusdata',[Contactuscontroller::class, 'addcontactusdata'])->name('addcontactusdata');
 Route::post('/register',[RegisterController::class, 'register'])->name('register');
+Route::post('/addstudentregdata', [studenregcontroller::class, 'addstudentregdata'])->name('addstudentregdata');
 
 
 //FORM//
@@ -112,9 +114,10 @@ Route::view('teacher', 'teacher')
         Route::get('admin.admin-contact', [AdminController::class, 'viewcontact'])->name('admin.admin-contact');
         Route::get('admin.admin-booking',[AdminController::class, 'viewbooking'])->name('admin.admin-booking');
         Route::get('admin.Admin',[AdminController::class, 'managestudent'])->name('admin.Admin');
-        Route::get('/students', 'StudentController@index');
+        Route::get('/students', [StudentController::class, 'index']);
         Route::get('/students/add', 'StudentController@create');
         Route::post('/students', 'StudentController@store');
+        Route::get('Adminaddstudent', [AdminController::class, 'adminaddstudent']);
 
       });
 

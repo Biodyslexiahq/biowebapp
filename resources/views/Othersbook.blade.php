@@ -107,14 +107,15 @@
                     <h4 class="centered-text3" style="font-family: Poppins;">Student Information</h4>
                 </div>
                 <div>
-                    <form action="" method="post">
+                    <form action="{{url('addstudentregdata')}}" method="POST">
+                    @csrf
                         <div class="mb-3">
                         <label for="studentname" class="form-label " style="font-family:Poppins;">Student Name :</label>
                         <input type="text" class="form-control" id="studentname" name="studentname">
                         </div>
                         <div class="mb-3">
                         <label for="studentage" class="form-label " style="font-family:Poppins;">Student Age :</label>
-                        <input type="text" class="form-control" id="studentname" name="studentname">
+                        <input type="text" class="form-control" id="studentname" name="studentage">
                         </div>
                         <div class="mb-3">
                         <label for="Gender" class="form-label" style="font-family:Poppins;" >Gender :</label>
@@ -137,7 +138,8 @@
                             <option value="Indian">Indian</option>
                         </select>
                         <input type="text" class="form-label" name="enthnicothers" placeholder="Other Ethnic here..">
-                        </div>
+                        <p>please type "none" in other ethnic if you already choose your option. </p>
+                        </div><br>
                         <div class="mb-3">
                         <label for="school grade" class="form-label" style="font-family: Poppins;">School Grade :</label>
                         <input type="text" class="form-control" id="schoolgrade" name="schoolgrade">
@@ -176,7 +178,7 @@
                         </div>
                         <div class="mb-3">
                         <label for="programme" class="form-label" style="font-family:Poppins;" >Choose your Programme :</label>
-                        <select name="genderselect" id="gender">
+                        <select name="progselect" id="programselect">
                         <option disabled selected value> -- select an option -- </option>
                             <option value="Daily Class">Daily Class (Physical/Online Class) (New Students are required to take the Biodyslexia VAKT Test)</option>
                             <option value="Saturday Class">Saturday Class (Physical/Online Class) (New Students are required to take the Biodyslexia VAKT Test)</option>
