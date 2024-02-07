@@ -125,4 +125,10 @@ class AdminController extends Controller
     {
         return view('Adminaddstudent');
     }
+
+    public function viewstudent()
+    {
+        $studentdatas = \DB::table('studentreg')->get();
+        return view('admin.admin-view-student', compact('studentdatas'));
+    }
 }

@@ -118,6 +118,7 @@ Route::view('teacher', 'teacher')
         Route::get('/students/add', 'StudentController@create');
         Route::post('/students', 'StudentController@store');
         Route::get('Adminaddstudent', [AdminController::class, 'adminaddstudent']);
+        Route::get('admin.admin-view-student', [AdminController::class,'viewstudent'])->name('admin.admin-view-student');
 
       });
 
