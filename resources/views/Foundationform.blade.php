@@ -116,13 +116,14 @@
                     <h1><b>For BioDyslexia Educational Diagnostic Assessment Appointment please contact us via Whatsapp.</b></h1>
                 </div>
                 <div>
-                    <form action="" method="post">
+                    <form action="{{url ('addfourmdailydata')}}" method="POST">
+                    @csrf
                     <div>
                     <h4 class="centered-text3 mt-5" style="font-family: Poppins;">Preferer Programme</h4>
                     </div>
                     <div class="mb-3">
                         <label for="programme" class="form-label" style="font-family:Poppins;" >Choose your Programme :</label>
-                        <select name="genderselect" id="gender">
+                        <select name="programmeselect1" id="programmeselect1">
                         <option disabled selected value> -- select an option -- </option>
                             <option value="4M Daily Class (Physical)">4M Daily Class (Physical Class) (5 Days) RM 1150</option>
                             <option value="4M Daily Class (Online)">4M Daily Class (Online Class) (5 Days) RM 1150</option>
@@ -142,7 +143,8 @@
                             <option value="Morning (9:30am - 12:30pm)">Morning (9:30am - 12:30pm)</option>
                             <option value="Evening (2:00pm - 5:00pm)">Evening (2:00pm - 5:00pm)</option>
                         </select>
-                        <input type="text" class="form-label" name="Sessionphysical" placeholder="Online class here..">
+                        <input type="text" class="form-label" name="onlineclass" placeholder="Online class here..">
+                        <p><b>* Please enter "None" in online class field before proceeding.</b></p>
                         </div>
                         <div class="mb-3">
                         <label for="studentname" class="form-label " style="font-family:Poppins;">Student Name :</label>

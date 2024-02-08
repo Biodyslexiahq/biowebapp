@@ -126,9 +126,17 @@ class AdminController extends Controller
         return view('Adminaddstudent');
     }
 
+
+    // 8.2.2024
     public function viewstudent()
     {
         $studentdatas = \DB::table('studentreg')->get();
         return view('admin.admin-view-student', compact('studentdatas'));
     }
+    public function view4mdailyclass()
+    {
+        $fourmdailydatas = \DB::table('four_mdailyclass')->get();
+        return view('admin.admin-view-student-class', compact('fourmdailydatas'));
+    }
+
 }

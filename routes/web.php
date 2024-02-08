@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Appointmentcontroller;
 use App\Http\Controllers\Contactuscontroller;
+use App\Http\Controllers\fourmdailycontroller;
 use App\Http\Controllers\Homecontroller;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\studenregcontroller;
@@ -67,6 +68,8 @@ Route::post('/addappdata',[Appointmentcontroller::class, 'addappdata'])->name('a
 Route::post('/addcontactusdata',[Contactuscontroller::class, 'addcontactusdata'])->name('addcontactusdata');
 Route::post('/register',[RegisterController::class, 'register'])->name('register');
 Route::post('/addstudentregdata', [studenregcontroller::class, 'addstudentregdata'])->name('addstudentregdata');
+Route::post('/addfourmdailydata', [fourmdailycontroller::class, 'addfourmdailydata'])->name('addfourmdailydata');
+
 
 
 //FORM//
@@ -119,6 +122,7 @@ Route::view('teacher', 'teacher')
         Route::post('/students', 'StudentController@store');
         Route::get('Adminaddstudent', [AdminController::class, 'adminaddstudent']);
         Route::get('admin.admin-view-student', [AdminController::class,'viewstudent'])->name('admin.admin-view-student');
+        Route::get('admin.admin-view-student-class', [AdminController::class , 'view4mdailyclass'])-> name('admin.admin-view-student-class');
 
       });
 
