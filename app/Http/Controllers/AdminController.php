@@ -139,4 +139,10 @@ class AdminController extends Controller
         return view('admin.admin-view-student-class', compact('fourmdailydatas'));
     }
 
+    public function view4msatclass()
+    {
+        $fourmsatdatas = \DB::table('fourmsatclass')->get();
+        return view('admin.admin-view-student-class', compact('fourmsatdatas'));
+    }
+
 }

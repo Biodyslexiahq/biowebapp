@@ -6,7 +6,7 @@
     <div class="max-w-9x1 mx-auto sm:px-10 lg:px-8">
         <div class="bg-white overflow-x shadow-sm sm:rounded-lg">
             <div class="p-6 text-gray-900">
-                <h1 class="centered-text3" style="family-font: Poppins;">Programme Data</h1><br><br>
+                <h1 class="centered-text3" style="family-font: Poppins;">4M Daily Class</h1><br><br>
                 <table width="100%" style="padding: 8px; text-align: left; border-bottom: 1px solid #ddd;">
                     <thead class="table-dark">
                         <tr class="text-black ">
@@ -35,4 +35,8 @@
         </div>
     </div>
 </div>
+
+
+
+
 @endsection

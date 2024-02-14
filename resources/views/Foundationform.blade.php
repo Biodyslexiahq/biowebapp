@@ -136,7 +136,7 @@
                         <h3 class="centered-text3 mb-5">For online class please mention the days and time prefer in the other section.</h3>
                         </div>
                         <div class="mb-3">
-                        <label for="ethnic" class="form-label" style="font-family:Poppins;" >Choose your time :</label>
+                        <label for="time" class="form-label" style="font-family:Poppins;" >Choose your time :</label>
                         <select name="Sessionphysical" id="sessionphysical">
                         <option disabled selected value> -- select an option -- </option>
                             <option value="Morning (8:30am - 11:30am)">Morning (8:30am - 11:30am)</option>
@@ -180,13 +180,14 @@
                     <h1><b>For BioDyslexia Educational Diagnostic Assessment Appointment please contact us via Whatsapp.</b></h1>
                 </div>
                 <div>
-                    <form action="" method="post">
+                    <form action="{{url ('addfourmsatdata')}}" method="post">
+                      @csrf
                     <div>
                     <h4 class="centered-text3 mt-5" style="font-family: Poppins;">Preferer Programme</h4>
                     </div>
                     <div class="mb-3">
                         <label for="programme" class="form-label" style="font-family:Poppins;" >Choose your Programme :</label>
-                        <select name="genderselect" id="gender">
+                        <select name="progselect" id="progselect">
                         <option disabled selected value> -- select an option -- </option>
                             <option value="4M Daily Class (Physical)">4M Daily Class (Physical Class) (1 Days 3 Hours) RM 875</option>
                             <option value="4M Daily Class (Online)">4M Daily Class (Online Class) (3 Days, 1 Day 1 Hour) RM 875</option>
@@ -199,12 +200,13 @@
                         <h3 class="centered-text3 mb-5">For online class please mention the days and time prefer in the other section.</h3>
                         </div>
                         <div class="mb-3">
-                        <label for="ethnic" class="form-label" style="font-family:Poppins;" >Choose your time :</label>
-                        <select name="Sessionphysical" id="sessionphysical">
+                        <label for="time" class="form-label" style="font-family:Poppins;" >Choose your time :</label>
+                        <select name="timeselect" id="timeselect">
                         <option disabled selected value> -- select an option -- </option>
                             <option value="Only Saturday class (9:30am - 12:30pm)">Only Saturday class (9:30am - 12:30pm)</option>
                         </select>
-                        <input type="text" class="form-label" name="sessionphysical" placeholder="Online class here..">
+                        <input type="text" class="form-label" name="timeselect2" placeholder="Online class here..">
+                        <p><b>* Please enter "None" in online class field before proceeding.</b></p>
                         </div>
                         <div class="mb-3">
                         <label for="studentname" class="form-label " style="font-family:Poppins;">Student Name :</label>

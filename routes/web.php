@@ -3,6 +3,7 @@
 use App\Http\Controllers\Appointmentcontroller;
 use App\Http\Controllers\Contactuscontroller;
 use App\Http\Controllers\fourmdailycontroller;
+use App\Http\Controllers\fourmsatcontroller;
 use App\Http\Controllers\Homecontroller;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\studenregcontroller;
@@ -69,6 +70,7 @@ Route::post('/addcontactusdata',[Contactuscontroller::class, 'addcontactusdata']
 Route::post('/register',[RegisterController::class, 'register'])->name('register');
 Route::post('/addstudentregdata', [studenregcontroller::class, 'addstudentregdata'])->name('addstudentregdata');
 Route::post('/addfourmdailydata', [fourmdailycontroller::class, 'addfourmdailydata'])->name('addfourmdailydata');
+Route::post('/addfourmsatdata', [fourmsatcontroller::class, 'addfourmsatdata'])->name('addfourmsatdata');
 
 
 

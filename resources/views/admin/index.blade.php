@@ -43,8 +43,17 @@
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
             <div class="p-6 text-gray-900">
-                <h1>Chat with Client.</h1><br>
-                <p>Realtime chatbox here</p>
+                <h1 style="font-family: Poppins;">Admin Navigation Section!</h1>
+                <br>
+                <a href="{{ route('admin.admin-has-roles') }}"><button type="button" class="btn btn-info">Manage Roles</button></a>
+                <a href="https://www.godaddy.com/en-my"><button type="button" class="btn btn-info">GoDaddy.com</button></a>
+                <a href="{{ route('admin.admin-contact') }}"><button type="button" class="btn btn-info">Contact us</button></a>
+                <a href="{{ route('admin.admin-booking') }}"><button type="button" class="btn btn-info">Booking Data</button></a>
+                <a href="{{ route('admin.Admin') }}"><button type="button" class="btn btn-info">Bioiqra data</button></a>
+                <a href="{{ route('admin.admin-view-student') }}"><button type="button" class="btn btn-info">View Student</button></a>
+                <a href="{{ route('admin.admin-view-student-class') }}"><button type="button" class="btn btn-info">Programme Data</button></a>
+                <a href="{{ route('admin.Admin') }}"><button type="button" class="btn btn-info">Manage Students</button></a>
+                
             </div>
         </div>
     </div>

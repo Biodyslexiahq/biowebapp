@@ -17,30 +17,7 @@
                 </div>
                 <!--SIDEBAR BODY-->
                 <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-                  <ul class="navbar-nav fs-5 flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.admin-has-roles') }}">Manage Roles</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active text-black" aria-current="page" href="https://www.godaddy.com/en-my">GoDaddy.com</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.admin-contact') }}">Contact us </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.admin-booking') }}">Booking Data </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.admin-view-student') }}">View Student </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.admin-view-student-class') }}">Programme Data </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active text-black" aria-current="page" href="{{ route('admin.Admin') }}">Manage Students </a>
-                    </li>
-                         
-                  </ul>
+                  <!--INSERT HERE SOMETHING IF WANNA HAVE NAVBAR MENU-->
                 </div>
               </div>
               <div class="navbar-nav">
