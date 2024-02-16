@@ -16,6 +16,7 @@ class Appointmentcontroller extends Controller{
      
 
         AppointmentData::create([
+            'parentsname' => $request->parentsname,
             'studentssname' => $request->studentssname,
             'studentsage'=> $request->studentsage,
             'address'=> $request->address,
@@ -38,7 +39,7 @@ class Appointmentcontroller extends Controller{
 
         $data =[
             [
-           
+            'parentsname'=> $request->Parentname,
             'studentssname' => $request->Studentname,
             'studentsage'=> $request->studentage,
             'address'=> $request->Address,
