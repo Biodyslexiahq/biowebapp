@@ -1,5 +1,4 @@
    @extends('admin.admin-master')
-   
    @section('content')
    <header>
             <link rel="stylesheet" href="{{ URL::asset('css/stylesDashboard.css')}}">
@@ -11,18 +10,17 @@
                 <!-- Header content -->
             </header>
             <div class="content">
-                    <div class="left-panel">
                         <ul class="menu">
                             <li class="{{ Request::is('students*') ? 'active' : '' }}">
-                                <a href="{{ url('/students') }}">Students</a>
-                                <ul class="submenu">
-                                    <li><a href="{{ route('admin.adminaddstudent') }}">Add Student</a></li>
+                                <a href="{{ url('/admin.admin-view-student') }}">Students</a>
+                                <ul class="dropdown">
+                                    <li><a href="/Othersbook" class="dropdown-item">Add Student</a></li>
                                     <li><a href="{{ url('/students/edit') }}">Edit Student</a></li>
                                 </ul>
                             </li>
                             <li class="{{ Request::is('teachers*') ? 'active' : '' }}">
                                 <a href="{{ url('/teachers') }}">Teachers</a>
-                                <ul class="submenu">
+                                <ul class="dropdown">
                                     <li><a href="{{ url('/teachers/add') }}">Add Teacher</a></li>
                                     <li><a href="{{ url('/teachers/edit') }}">Edit Teacher</a></li>
                                 </ul>
@@ -30,11 +28,10 @@
                             <li><a href="{{ url('/student-progress') }}">Student Progress</a></li>
                             <li><a href="{{ url('/teacher-progress') }}">Teacher Progress</a></li>
                         </ul>
-                    </div>
                 </div>
 
 
-                <div class="main-content">
+               <div class="main-content">
                     <asp:Panel ID="addStudentPanel" runat="server">
                         <div class="form-container">
                             <h2 class="form-title">Add student</h2>
